@@ -8,14 +8,14 @@ var myximage7 = new Image();
 var myximage8 = new Image();
 var myximage9 = new Image();
 
-var myximgsrc01 = "/Images/Signshow1/Header1a";
-var myximgsrc02 = "/Images/Signshow1/Header1";
-var myximgsrc03 = "/Images/Signshow1/Header1";
-var myximgsrc04 = "/Images/Signshow1/Header1";
-var myximgsrc05 = "/Images/Signshow1/Header1a";
-var myximgsrc06 = "/Images/Signshow1/Header1a";
-var myximgsrc07 = "/Images/Signshow1/Header1";
-var myximgsrc08 = "/Images/Signshow1/Header1a";
+var myximgsrc01 = "http://images.devestechnet.com/Signshow1/Header1a";
+var myximgsrc02 = "http://images.devestechnet.com/Signshow1/Header1";
+var myximgsrc03 = "http://images.devestechnet.com/Signshow1/Header1";
+var myximgsrc04 = "http://images.devestechnet.com/Signshow1/Header1";
+var myximgsrc05 = "http://images.devestechnet.com/Signshow1/Header1a";
+var myximgsrc06 = "http://images.devestechnet.com/Signshow1/Header1a";
+var myximgsrc07 = "http://images.devestechnet.com/Signshow1/Header1";
+var myximgsrc08 = "http://images.devestechnet.com/Signshow1/Header1a";
 
 var ssnumimgs = 8;
 

@@ -49,26 +49,26 @@ namespace Deves50.Controllers
         //*******************************************************************************Start 1st Json Set
         public JsonResult GetImagesFromOneCabDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/OneCabJam/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/OneCabJam/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
 
         public JsonResult GetImagesFromOtherOneCabDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/OtherOneCabJam/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/OtherOneCabJam/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
         //*******************************************************************************End 1st Json Set
         //*******************************************************************************Start 2nd Json Set
         public JsonResult GetImagesFromTwoCabDirectory(int myimgId = 1)
         {
-            var absolutePatha = Server.MapPath("/Images/OtherSlideShows/TwoCabJam/");
+            var absolutePatha = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/TwoCabJam/");
             return GetNextImageFilePath(absolutePatha, myimgId);
         }
 
         public JsonResult GetImagesFromOtherTwoCabDirectory(int myimgId = 1)
         {
-            var absolutePatha = Server.MapPath("/Images/OtherSlideShows/OtherTwoCabJam/");
+            var absolutePatha = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/OtherTwoCabJam/");
             return GetNextImageFilePath(absolutePatha, myimgId);
         }
         //*******************************************************************************End 2nd Json Set
@@ -201,7 +201,7 @@ namespace Deves50.Controllers
             var imageCounter = 1;
             foreach (var imageFile in myImageFiles)
             {
-                var relativePathOfImage = imageFile.Replace(myWebsitePath, "").Replace(@"\", "/"); // changes C:\blahblah\blahblah\myimage to "/Content/Images/MyImage.jpg" so it's friendly
+                var relativePathOfImage = imageFile.Replace(myWebsitePath, "").Replace(@"\", "/"); // changes C:\blahblah\blahblah\myimage to "/Contenthttp://images.devestechnet.com/MyImage.jpg" so it's friendly
                 // THEORETICAL - I think it works but we have to try it!
                 myImageDictionary.Add(imageCounter, relativePathOfImage);
                 imageCounter++;
@@ -235,7 +235,7 @@ namespace Deves50.Controllers
             var imageCountera = 1;
             foreach (var imageFilea in myImageFilesa)
             {
-                var relativePathOfImagea = imageFilea.Replace(myWebsitePatha, "").Replace(@"\", "/"); // changes C:\blahblah\blahblah\myimage to "/Content/Images/MyImage.jpg" so it's friendly
+                var relativePathOfImagea = imageFilea.Replace(myWebsitePatha, "").Replace(@"\", "/"); // changes C:\blahblah\blahblah\myimage to "/Contenthttp://images.devestechnet.com/MyImage.jpg" so it's friendly
                 // THEORETICAL - I think it works but we have to try it!
                 myImageDictionarya.Add(imageCountera, relativePathOfImagea);
                 imageCountera++;
@@ -272,13 +272,13 @@ namespace Deves50.Controllers
         }
         public JsonResult GetImagesFromFrontPageDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/FrontPageAds/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/FrontPageAds/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
 
         public JsonResult GetImagesFromOtherFrontPageDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/FrontPageJam/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/FrontPageJam/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
         public ActionResult LicensePlateResto()
@@ -303,13 +303,13 @@ namespace Deves50.Controllers
 
         public JsonResult GetImagesFromOneDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/Restorations/1950A/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/Restorations/1950A/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
 
         public JsonResult GetImagesFromOtherDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/Restorations/1950B/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/Restorations/1950B/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
         //*******************************************************************************End MorePix
@@ -359,13 +359,13 @@ namespace Deves50.Controllers
 
         public JsonResult GetImagesFromCarbDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/RochBCarbJam/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/RochBCarbJam/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
 
         public JsonResult GetImagesFromOtherCarbDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/RochBCarbImg/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/RochBCarbImg/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
         //*******************************************************************************End ROCHBCARB
@@ -451,13 +451,13 @@ namespace Deves50.Controllers
 
         public JsonResult GetImagesFromIgnitionDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/StockIgnitionJam/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/StockIgnitionJam/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
 
         public JsonResult GetImagesFromOtherIgnitionDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/StockIgnitionImg/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/StockIgnitionImg/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
         //*******************************************************************************End Stock Ignition
@@ -500,13 +500,13 @@ namespace Deves50.Controllers
         }
         public JsonResult GetImagesFromTuneUpDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/TuneUpGuideJam/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/TuneUpGuideJam/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
 
         public JsonResult GetImagesFromOtherTuneUpDirectory(int imgId = 1)
         {
-            var absolutePath = Server.MapPath("/Images/OtherSlideShows/TuneUpGuideImg/");
+            var absolutePath = Server.MapPath("http://images.devestechnet.com/OtherSlideShows/TuneUpGuideImg/");
             return GetNextImageFilePath(absolutePath, imgId);
         }
         //*******************************************************************************End Tuneup Guide

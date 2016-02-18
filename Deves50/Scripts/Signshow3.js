@@ -8,14 +8,14 @@ var xmyimage7 = new Image();
 var xmyimage8 = new Image();
 var xmyimage9 = new Image();
 
-var myimgsrc001 = "/Images/Signshow3/Open 24 hrs";
-var myimgsrc002 = "/Images/Signshow3/Open 24 hrs";
-var myimgsrc003 = "/Images/Signshow3/Open 24 hrs2";
-var myimgsrc004 = "/Images/Signshow3/Open 24 hrs2";
-var myimgsrc005 = "/Images/Signshow3/Open 24 hrs";
-var myimgsrc006 = "/Images/Signshow3/Open 24 hrs24";
-var myimgsrc007 = "/Images/Signshow3/Open 24 hrs24";
-var myimgsrc008 = "/Images/Signshow3/Open 24 hrs";
+var myimgsrc001 = "http://images.devestechnet.com/Signshow3/Open 24 hrs";
+var myimgsrc002 = "http://images.devestechnet.com/Signshow3/Open 24 hrs";
+var myimgsrc003 = "http://images.devestechnet.com/Signshow3/Open 24 hrs2";
+var myimgsrc004 = "http://images.devestechnet.com/Signshow3/Open 24 hrs2";
+var myimgsrc005 = "http://images.devestechnet.com/Signshow3/Open 24 hrs";
+var myimgsrc006 = "http://images.devestechnet.com/Signshow3/Open 24 hrs24";
+var myimgsrc007 = "http://images.devestechnet.com/Signshow3/Open 24 hrs24";
+var myimgsrc008 = "http://images.devestechnet.com/Signshow3/Open 24 hrs";
 
 var snumimgs = 8;
 

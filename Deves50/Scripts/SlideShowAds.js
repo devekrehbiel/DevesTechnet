@@ -7,13 +7,13 @@ var adimage6 = new Image();
 var adimage7 = new Image();
 var adimage8 = new Image();
 
-var myimgsrc1 = "/Images/Advertisements/JimCarterAd";
-var myimgsrc2 = "/Images/Advertisements/TimsLogo";
-var myimgsrc3 = "/Images/Advertisements/DevesTechNeta";
-var myimgsrc4 = "/Images/Advertisements/DavesBlog";
-var myimgsrc5 = "/Images/Advertisements/ChevyTalk";
-var myimgsrc6 = "/Images/Advertisements/KeithHardy";
-var myimgsrc7 = "/Images/Advertisements/BradAllen";
+var myimgsrc1 = "http://images.devestechnet.com/Advertisements/JimCarterAd";
+var myimgsrc2 = "http://images.devestechnet.com/Advertisements/TimsLogo";
+var myimgsrc3 = "http://images.devestechnet.com/Advertisements/DevesTechNeta";
+var myimgsrc4 = "http://images.devestechnet.com/Advertisements/DavesBlog";
+var myimgsrc5 = "http://images.devestechnet.com/Advertisements/ChevyTalk";
+var myimgsrc6 = "http://images.devestechnet.com/Advertisements/KeithHardy";
+var myimgsrc7 = "http://images.devestechnet.com/Advertisements/BradAllen";
 
 var numimgx = 7;
 

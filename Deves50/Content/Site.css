@@ -2,7 +2,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image:url("/Images/DevesBackgroundb.jpg");
+    background-image:url("http://images.devestechnet.com/DevesBackgroundb.jpg");
     background-position: right top;
 }
 /* Set padding to keep content from hitting the edges */
@@ -337,7 +337,7 @@ header {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: black!important;
     color: black;
-    /*background-image: url("~/Images/hamburger2.gif");*/
+    /*background-image: url("~http://images.devestechnet.com/hamburger2.gif");*/
 }
 .navbar-toggle {
     position: relative;

@@ -9,13 +9,13 @@ window.onload = function ()
     // preload images
     images = new Array();
     images[0] = new Image();
-    images[0].src = "/Images/Restorations/1950B/D50b101lg.jpg";
+    images[0].src = "http://images.devestechnet.com/Restorations/1950B/D50b101lg.jpg";
     images[1] = new Image();
-    images[1].src = "/Images/Restorations/1950B/D50b102lg.jpg";
+    images[1].src = "http://images.devestechnet.com/Restorations/1950B/D50b102lg.jpg";
     images[2] = new Image();
-    images[2].src = "/Images/Restorations/1950B/D50b103lg.jpg";
+    images[2].src = "http://images.devestechnet.com/Restorations/1950B/D50b103lg.jpg";
     images[3] = new Image();
-    images[3].src = "/Images/Restorations/1950B/D50b104lg.jpg";
+    images[3].src = "http://images.devestechnet.com/Restorations/1950B/D50b104lg.jpg";
  
 }
  
