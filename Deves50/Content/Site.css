@@ -337,7 +337,7 @@ header {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: black!important;
     color: black;
-    /*background-image: url("~http://images.devestechnet.com/hamburger2.gif");*/
+    /*background-image: url("http://images.devestechnet.com/hamburger2.gif");*/
 }
 .navbar-toggle {
     position: relative;
