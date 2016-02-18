@@ -1,0 +1,1136 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Critical Systems Warning Circuit";
+    ViewBag.Message = "Upgrading Critical Systems Warnings";
+}
+<div class="HowToTitle1">Adding a Critical Information System to your 12 Volt Vintage Vehicle</div><br />
+<aside>
+    As with all of the content on this website, you can simply click on any picture to get its largest size. In this way, we can maintain the clearest definition to make it
+    easier for you to see the detail. If the picture is so big you can't see all of it on your screen, all you have to do is hold down CONTROL and move the mouse wheel up and
+    down to resize!<br />
+</aside><br />
+<aside>
+    <h4><b>Critical Information System [CIS]: The Movie!</b></h4><h4>
+    Morgan Freeman? Bruce Willis? Phooey! How about 35 minutes of learning all about this incredible new system? You will
+    be glad you did!<br /><br />
+    <a href="https://www.youtube.com/my_videos?o=U" target=_blank>DevesTechnet YouTube Channel</a><br />
+    <a href="https://www.youtube.com/watch?v=XV_eSjhvapU" target=_blank>The Critical Information System</a>
+</h4><br />
+</aside>
+<div class="HowToText">
+    <h4><b>Prologue</b></h4>
+    <a href="/Images/Projects/WarningSystem/WarningSystemAmin.gif">
+        <img class="floattoright" img src="/Images/Projects/WarningSystem/WarningSystemAnim.gif" width="250">
+    </a>
+    <p>
+        It's almost funny the resistance to this project that I had to endure in researching this subject. Almost. Okay, to be perfectly honest, it wasn't funny at all. It
+        was very revealing about the state of our citizenry, and very depressing, but I pushed on anyway. Imagine people so afraid of tarnishing their ego that they would go
+        out of their way to explain in detail, through several threads on several forums, the stupidity of doing this research. Remember, they didn't have to post anything at
+        all, rather, let the answers be judged on their own merits. No, these people feel adamantly that anyone who should research putting a Critical Information System in
+        their Vintage vehicle is contributing to the downfall of America as they know it. I hope to NEVER know America the same way they do. Striving to be the lowest
+        common denominator is something that just saddens me. It wastes everyones time who sincerely wants to know more and at the same time really diminishes the entire
+        interaction. If you are one of those naysayer types, join the club, at some point in time we all are, but let others learn without interference from the peanut gallery.
+    </p>
+    <h4><b>What is a Critical Information System?</b></h4>
+    <p>
+        This System monitors your Oil Pressure, Charging System, Engine Water Temperature, Fuel Volume and other systems you choose to monitor and provides either an Audible
+        warning, or a warning light depending on how you configure it. This of course isn't anything new and if you drive a modern vehicle, you don't give a second thought to
+        the systems that notify you of a malfunction. But if you have a vintage vehicle, you also know they do not come equipped with such a system. Some of us value our vintage
+        ride more than our modern drivers, so why not put a warning system in your vintage ride?
+    </p>
+    <p>
+        <b>Let's examine why this would be a good thing to have. Scenario:</b> You are driving down the road with a friend in your precious vintage ride, talking and just enjoying
+        the day. You are a very good driver and you have a system for scanning the gauges that is guaranteed to prevent damage caused by malfunctioning systems. All of the
+        sudden one of the flex lines breaks in your Oil system. Since oil is pumping out all over the highway at the rate of about 15 seconds per quart, you have about 60-90
+        seconds to shut down the vehicle's engine and coast to a stop before doing major internal engine damage. Now I ask you.. wouldn't you appreciate an audible warning
+        on such a critical system that sounds off the second oil pressure is lost? Isn't one of the reasons you appreciate your vintage vehicle is because it takes you back
+        to a slower, simpler time when things were less anxiety prone? Yet, without this system, you BETTER be scanning your gauges at regular intervals! Well, I prefer to
+        enjoy the drive and let the vehicle tell me what it needs.
+    </p>
+    <p>
+        As with all things on DevesTechnet.com, this Critical Information System is documented so that you can make it yourself without any money changing hands! This
+        article explains in painstaking detail exactly how to do this yourself. If you cannot do this yourself, we will provide you a means to purchase one from the site. As
+        with everything else, all proceeds go to keep our vintage resources online and up to date.
+    </p>
+    <h4><b>Let's Get Started!</b></h4>
+    <p>
+        We need to take this one system at a time, so let's focus on the basic requirements. First we need 12 volts Switched Power. This will be provided using the Ignition
+        Switch. Ignition ON will be our power source. Next, we need the system to know if the engine is running or not. Of course there is no Oil Pressure when the engine is
+        not running right? Each of these things that are no-brainer's to us are important to teach our circuit so we have a useful system. Next we will need Sensors to tell
+        us when a certain system is malfunctioning. Now let's focus on what we want to monitor and what will be required.
+    </p>
+    <aside>
+        One thing that will NOT be required is your current gauge system. To build a proper system such as this, you want this system to be a true Redundant system that is not
+        dependent on the current system. In this way we can be assured our systems are operating normally (or not) with two totally separate systems.
+    </aside>
+    <p>
+        We will start with a list of requirements that your vehicle must have in order for this system to work. These same requirements were necessary in the very beginning
+        of the automated vehicle warning systems. We realize we are talking about vintage vehicles, so anyone having information on workarounds for any of these, please let
+        us know.<br /><br />
+        <b>
+            Vehicle Requirements:
+        </b>
+        <ul>
+            <li>A 12 Volt Electrical System</li>
+            <li>An Alternator with Alternator Warning Light Circuit</li>
+        </ul>
+        The above requirements are necessary because we are going to manipulate the Alternator's Warning circuit to tell us when the engine is running and when it is not.
+        This is central to the reliability of this system.
+    </p>
+    <p>
+        Now, let's break down the individual systems and the requirements for each one.
+        <a href="/Images/Projects/12VUpgrade/12VUpgrade0057lg.jpg">
+            <img class="PicsRight" src="/Images/Projects/12VUpgrade/12VUpgrade0057sm.jpg">
+        </a>
+    <p>
+        The wire going out if the picture to the right is the warning circuit wire. It is the small terminal closest to the main terminal on any 10SI or 12SI Alternator and
+        is labeled '1R'.
+    </p>
+    <ul>
+        <li>
+            <b>Alternator Warning Light [White] - </b>This sub-system is already available but it does not just work to connect a light to this system, there is a little more to
+            it. The Alternator has a built-in warning light circuit. The terminal on a one wire (or three wire) 10SI or 12SI Alternator is 1R. To use this circuit for a Charging
+            Circuit Malfunction warning and take advantage of the reliability and availability of new LED Lighting, you need to add a 500 Ohm, 3 Watt Resistor in line (in series)
+            with the negative side of the LED (Alternator side). The way the system works is, when ignition is ON, the light comes on and shines brightly. When the engine starts,
+            the light goes very dim and even dimmer with RPM telling the operator that the Alternator is charging normally. We can use the voltage and current characteristics of
+            the Alternators warning circuit to gauge if our engine is running or not. It is all by itself pretty darn cool that we can see a visual indication of proper charging
+            behavior!<br /><br />
+        </li>
+        <li>
+            <b>Oil Pressure Warning Audio and Light [Red] - </b>This sub-system is dependent on our Alternator to tell us when the engine is running. This is accomplished with a
+            relay that removes ground from the warning circuit when the Alternator begins charging, then puts it back once the Alt warning light goes dim. This keeps the
+            warning from activating at ignition on. An Oil Pressure sensor is required for this as well. The sensor begins in a grounded state, then once oil pressure is
+            higher than 6psi, the ground is removed. Since our vintage vehicles have mechanical oil pressure sensors for the vintage gauges, we put a 1/8" NPT Brass Tee
+            connector in the oil line so that we can use two sensors; the original one and the 'low pressure warning' one. To keep the sensor from sounding the alarm when it
+            goes bad, which actually happened during testing, we add a 1N5401 Diode on the negative side of the relay so the Alternator can only forward bias the circuit. Without
+            the Diode, a faulty sensor will sound the alarm, and the toggle switch will not turn it off!<br /><br />
+        </li>
+        <li>
+            <b>Water Temperature Warning Light [Blue] - </b>Unlike the Oil Pressure circuit, Water Temp does not require the Alt Warning Light Circuit to squelch the light until
+            the engine is running. Once the Temperature reaches 220 degrees, the warning light and audible will come on. This requires an electronic temperature sensor (Lug Type
+            Thermistor) that is mounted to the 1/4" screw on the top of the Engine's Thermostat Housing. This very nicely overcomes the fact that there is only one manifold
+            connection for the conventional type sensor, and the original gauges use a mechanical sensor that is unsuitable for our needs. Modern vehicles are equipped with
+            these Thermistors to control electric fans, warning circuits, etc. so we feel confident in the technology. A large advantage is the Temperature threshold is fully
+            adjustable from Ambient to 257 degrees (F) just by turning a Potentiometer. This portion of the circuit also incorporates a Supervisor Circuit which monitors the
+            systems wiring to ensure the wires are connected and everything is working. A Yellow light on the box will light up if there is a fault.<br /><br />
+        </li>
+        <li>
+            <b>Fuel Low Warning Light, [Amber] - </b>This circuit connects to the existing Fuel Sending Unit via a single wire and monitors how Full or how Empty the tank is.
+            Since it is typically not a life or death warning like the others, just an Amber LED will illuminate. Since Person A might have a gas station right down the street
+            while Person B might have to drive 20 miles to the nearest station, this system is fully adjustable from Empty to a Half Full by turning a Potentiometer. As with
+            everything concerning Fuel Sending Units, a good ground is the most important.<br />
+        </li>
+    </ul>
+    </p>
+    <aside>
+        Any warning signal for any of these systems can sound an audio alarm and/or turn on a light. Once a malfunction is detected, 12 volts can activate the audible alarm
+        or the light, or both at the same time. This gives you the ability to decide how you want to configure your system.
+    </aside>
+    <h4><b>Basic Circuit Schematic</b></h4>
+    <p>
+        Let's examine the schematic diagram of the entire circuit. The dotted lines are the demarcation for each individual 'service' we are incorporating in the basic design.
+        Everything fits nicely on a 7cm by 9cm circuit board. The reason we use the metric system is because the enclosure we are using also uses it, and the enclosure has a
+        nice track to slide the board in to as long as we use 7cm. All Relays, Discrete and Passive components are on the printed circuit board with terminals to attach all of
+        the outside components, such as Thermistor, Piezo Buzzers, Switches, LED's etc.
+    </p><br />
+    <center>
+        <a href="/Images/Projects/WarningSystem/CriticalSystemsWarnSchematic.jpg">
+            <img class="Schematic3" img src="/Images/Projects/WarningSystem/CriticalSystemsWarnSchematic.jpg">
+        </a><br /><br />
+        <center>
+            <p style="font-size:10px">
+                <b>
+                    (Partial Circuit Design Courtesy of our Friends at <a href="http://allaboutcircuits.com" target=_blank><b>All About Circuits</b></a>. Special Thanks to Dr. Mike Mladejovsky, Phd EE
+                    for his design of the Low Fuel Circuit and MarcF for his design of the Supervisor Circuit. This is how truly great things happen. Cooperation and Collaboration!
+                </b>
+        </center>
+    </center>
+    </p><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0069lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0069sm.jpg">
+    </a><br />
+    <p>
+        <b>Explanation:</b> The Oil Pressure Relay is activated when engaging the ignition switch due to the difference in potential between the battery and the warning circuit in
+        the Alternator. The Alternator Fault Light is also bright before the Engine is started. The Low Oil Pressure Warning Audio is suppressed because the relay takes the
+        contact off the Normally Closed (NC) and puts it on the unused Normally Open (NO) contact removing ground. On startup, the Relay saturates when the potential equalizes and
+        the Relay shuts down as does the Alternator Fault Light. At the same time, Oil Pressure removes the Sensor's ground so the only time the Warning Audio is heard is if oil
+        pressure is lower than 6 psi WITH the engine running. <br /><br /><br /><br />
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0070lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0070sm.jpg">
+    </a><br />
+    <p>
+        Water over-temp warning is accomplished through a Relay Circuit that depends on a Thermistor heat sensor. This fully adjustable sensor (-40F to 257F) can be set
+        anywhere you choose but best around 220 degrees. Once it reaches its set temperature, the relay applies ground to the buzzer and LED. Once the temperature goes
+        below its set temp, ground is removed again and the buzzer/LED go off. We have also incorporated a fault system (supervisor circuit) that monitors the wiring to ensure
+        everything is connected and working properly. Without the supervisor circuit, you could have a broken thermistor wire and not know it.<br /><br /><br /><br />
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0071lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0071sm.jpg">
+    </a><br />
+    <p>
+        Low Fuel warning is accomplished by using the output of the existing Fuel Sending Unit. The system monitors the very low voltage that is present and when it reaches the
+        voltage that equals your desired warning level, the LED illuminates. This is adjustable from Empty (0 volts) to Half Full (approx 1.6 Volts) using a 6 volt fuel gauge and
+        Empty (0 volts) to completely Full using a 12 volt fuel gauge. The gauge comes into play because it delivers the voltage that activates the sending unit. <br /><br />
+        <br /><br /><br /><br />
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0073lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0073sm.jpg">
+    </a><br /><br />
+    <p>
+        This circuit has been tested thoroughly and works as advertised. The idea is to make this circuit as compact as possible while delivering everything expected. This
+        philosophy leads to much less concern about circuit failure. The fewer parts the better! Speaking of parts...
+    </p>
+    <br /><br /><br /><br /><br /><hr /><br />
+    <h4><b>Live Master Parts List</b></h4>
+    <p>
+        <ol>
+            <li>
+                4" long by 3" wide, by 1.5" high Project Box (or so). You need something to stuff all of the components in! You can use an old Delco-Remy regulator cover and
+                make a 3/32" thick flat plate for the base. I made the base the exact size to go inside the lip of the regulator cover then put tabs on each side with a hole for
+                screwing the box to the upper drivers side kick panel. You can either try to scare up an old Regulator Cover and do what I did, or get something like this:<br />
+                <a href="http://www.ebay.com/itm/111679112897?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>
+                    4.33" x 2.91" x 1.5" Aluminum Instrument Enclosure
+                </a>. This has a flange across the bottom for mounting to the cab and is the perfect size. It also has a slide-in component to it for sliding in the PCB. The
+                price is approx. $10.
+            </li>
+            <li>
+                Printed Circuit Boards - These are available from Devestechnet.com for $55.00 each plus shipping. They are very professionally manufactured by Bay Area Circuits
+                using the DipTrace PCB/Schematic Layout Program. It would be very difficult to proceed without this. My cost direct from Bay Area Circuits is $41.80 each, so the
+                R&D costs amount to about $13.20.
+            </li>
+            <li>
+                <a href="http://www.ebay.com/itm/231558512283?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>Audio Alarm Buzzer 95dB</a>.
+                I chose these because they are 95dB so plenty loud to get your attention and very inexpensive. There are so many Piezo buzzers to choose from
+                so get ones that you like. They also mount nicely to the top of my box. Mounts using 4-40 Screws. Holes on the enclosure are threaded. Price: $1.89 for two.
+            </li>
+            <li>
+                <a href="http://www.amazon.com/gp/product/B00DFYYRKW?psc=1&redirect=true&ref_=oh_aui_detailpage_o06_s00" target=_blank>LED Gauge Lights</a>.
+                Again, lots of choices. These are nice and small and retro looking. They are very bright for our purposes. You will be needing three colors. I chose white
+                for Alternator charging, Blue for Water and Red for Oil. Use a Letter E Drill Bit for the perfect fit. Another benefit is that the standard 1/4" terminals
+                will go through the hole. One annoyance is how fragile the leads are. Just plan on using heat shrink tubing in a few sizes to make things stronger. Don't
+                forget that LED's are polarity dependent, so Red is always Positive on these. $3.85 for the set of 5.
+            </li>
+            <li>
+                <a href="http://www.waytekwire.com/item/76327/?gclid=CIa-lICO5MgCFZKLaQodxuIP1w" target=_blank>Low Oil Pressure Sensor/Switch</a>. I chose to go with the 2-6psi
+                model SPST. This one simply works by starting off with a ground and once it hits a max of 6psi, it removes the ground. It is 1/8" NPT like the rest of our
+                oil sensor lines. Since my Oil Pressure Gauge is Mechanical, I use a 1/8" NPT Tee Connector so I can use both. Price: $13.51 w/ shipping.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Littelfuse/65600001009/?qs=%2fha2pyFaduhp5%2fUkRPDqHodwpvDNjrolAsClwaQkTuCWuc2puOoHEw%3d%3d" target=_blank>FuseHolder</a>.
+                I just flattened the leads and screwed it down with a 4-40 screw to the enclosure. This one is for the old style mini-fuse. I used a 10 amp fuse for this project. I
+                am not worried about the circuit as much as I am about having protection against the rest of the vehicle's electrical system. $ .91 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/NKK-Switches/P2011BP/?qs=sGAEpiMZZMvudeGI7i40XPABurvEjtKZi1m7rABS0U8%3d" target=_blank>SPST ON/OFF Toggle Switch</a>.
+                I added this to the design just so that if a person gets tired of hearing the alarm, they can reach under the dash and switch it off. It is merely wired at the
+                Ignition Power wire input to the enclosure after power is connected to the fuseholder and then the rest of the positive circuitry. $ 1.89
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/NKK-Switches/P2011BP/?qs=sGAEpiMZZMvudeGI7i40XPABurvEjtKZi1m7rABS0U8%3d" target=_blank>
+                    DC 12V Coil 20A 5 Pins Power RELAY PCB Type SPDT for SRA-12VDC-CL
+                </a>.
+                20 Amp PCB Mount 5 Pin Relay. 20 amps is way overkill, but there was no price penalty and I think we can use them for other parts of the system. The Ebay description
+                is deceiving because these are actually Songle SRA-12VDC-CL Relays. Very small and perfect for our needs. Price is approx. $3.78 for 2 of them. They have a 180
+                ohm coil which fits into our circuit perfectly.
+            </li>
+            <li>
+                <a href="http://www.ebay.com/itm/330919580591?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>
+                    XH-2P DIP Connector Lead Head Kit 2 pins 2.54mm White Color 2p
+                </a>.
+                These are 2 pin male and female connectors for the LEDs, Piezos, and switch. The male ends are soldered to the circuit board. The female ends attach to the wires using
+                crimp connections. These are the perfect solution for keeping things locked in place. Price is about $4.39 with shipping.
+            </li>
+            <li>
+                <a href="http://www.ebay.com/itm/130901362370?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>
+                    XH2.54-12P 2.54mm Connector Kits Pin Header +Terminal + Housing
+                </a>.
+                These are 12 pin male and female connectors for the main wiring harness. The male end is soldered to the circuit board. The female end attaches to the wires using
+                crimp connections. This is the perfect solution for keeping things locked in place. Price is about $2.89 with shipping.
+            </li>
+            <li>
+                <a href="http://www.ebay.com/itm/181461860269?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>
+                    JST 2.5 SM 8-Pin Male Female Connector plug with Wire x 5 Sets
+                </a>.
+                These are 8 pin male and female connectors with wire for the LED wiring harness. The ends are tinned and ready for attaching the LEDs to the box with a nice removable
+                connection. This is the perfect solution for keeping things locked in place. Price is about $4.50 with shipping.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Ohmite/43F500E/?qs=sGAEpiMZZMtbXrIkmrvidEd0ESfhiuCIMIy6askZVWc%3d" target=_blank>
+                    Wirewound Resistors - Through Hole 3 watt 500 ohms 1% Axial
+                </a>.
+                These resistors are typically used in association with an LED. You will need one for the Alternator Circuit. Mouser(.com) Electronics Part Number 588-43F500E.
+                Price is approx. $1.47 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Fairchild-Semiconductor/1N5401/?qs=sGAEpiMZZMutXGli8Ay4kCkC1e4xYYaOYjcYMdrnZ0Y%3d" target=_blank>
+                    1N5401 Diode Rectifiers 3.0a Rectifier General Purpose
+                </a>.
+                This Diode is used in the Alternator Circuit so it needs to be beefier than the others. You will need one for the Alternator Circuit. Mouser(.com) Electronics
+                Part Number 512-1N5401. Price is approx. $ .47 each.
+            </li>
+            <li>
+                <a href="http://www.ebay.com/itm/171924015859?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>
+                    Potentiometer 10k Ohm Variable Vertical Trimmer Resistor Blue
+                </a>.
+                These small compact Potentiometers will give us all the adjustment we need from Ambient to 257 degrees. Price is approx. $ .48 each.
+            </li>
+            <li>
+                <a href="http://www.ebay.com/itm/331693873925?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>
+                    LM393N LM393 DIP DIP-8 Low Power Dual Voltage Comparator
+                </a>.
+                These are in DIP 8 configuration. Price is approx. $ .48 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/Search/ProductDetail.aspx?R=XR2A-0811-Nvirtualkey65300000virtualkey653-XR2A-0811-N" target=_blank>
+                    IC & Component Sockets Socket DIP Term 8P 7.62mm .25AuPlate
+                </a>.
+                These are DIP 8 sockets for both the LM393 and LM358. Using a socket has a few advantages. We can solder down the socket without
+                overheating the Chip, and we can easily replace the Chip if it goes bad. You will need two. Mouser(.com) Electronics Part Number 653-XR2A-0811-N.
+                Price is approx. $ .51 each. Need Two.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/Search/ProductDetail.aspx?R=RN60D5000FB14virtualkey61300000virtualkey71-RN60D5000F" target=_blank>
+                    Metal Film Resistors - Through Hole 1/4watt 500ohms 1% 100ppm
+                </a>.
+                These resistors are typically used in association with an LED. You will need two. Mouser(.com) Electronics Part Number 71-RN60D5000F.
+                Price is approx. $ .21 each. Need Three.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/TE-Connectivity/CBT25J100K/?qs=%2fha2pyFadugpJlMC8bOZZusj6%2f2IsjMdZNIikKC0jK9CNTTgZ3yLTQ%3d%3d" target=_blank>
+                    Carbon Composition Resistors 100 KOhms 1/4W 250V
+                </a>.
+                This resistor is used in the water temp voltage divider circuit. Mouser(.com) Electronics Part Number 279-CBT25J100K.
+                Price is approx. $ .15 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Vishay/NTCLE203E3104HB0/?qs=%2fha2pyFaduhsSk256FhfE3g%2fU1YDAD1ST5qeO4lGnpApTpi65buVg2%252bUKeUSCPJ8" target=_blank>
+                    NTC Thermistor 100Kohms 3% -40-257F Automotive Grade
+                </a>.
+                This Thermistor is the sensor for the water temp circuit. The important thing for our purposes is that they are specially coated for automotive (harder use) applications
+                and rated to respond to temperatures from -40C to +125C (257F).To use it on your vintage ride, you will need to make the Thermistor Housing described later in the text.
+                Mouser(.com) Electronics Part Number 594-NTCLE203E3104HB0.
+                Price is approx. $ .36 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/TE-Connectivity/CBT25J10K/?qs=%2fha2pyFadugpJlMC8bOZZiT0JNDm0luD9IrkC2k8%252bi4%3d" target=_blank>
+                    Carbon Composition Resistors 10 KOhms 1/4W 250V
+                </a>.
+                This Resistor is part of the Supervisor Circuit. Mouser(.com) Electronics Part Number 279-CBT25J10K.
+                Price is approx. $ .16 each. Need Three.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/KOA-Speer/MF1-4LCT52R472J/?qs=%2fha2pyFadujx107AAlVRunf6oX0BaC1U37fUBjqtpEA%252bAAnMKhnD7A%3d%3d" target=_blank>
+                    Metal Film Resistors - Through Hole 1/4 WATT 4.7K OHM 5%
+                </a>.
+                This Resistor is part of the Supervisor Circuit and Low Fuel Circuit. You will need two. Mouser(.com) Electronics Part Number 660-MF1/4LCT52R472J.
+                Price is approx. $ .10 each. Need Two.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/TE-Connectivity-Neohm/CBT25J1K0/?qs=sGAEpiMZZMuDPtTs5Gda2%2fwGMz2hofsMSC9JDHI22Zw%3d" target=_blank>
+                    Carbon Composition Resistors 1 KOhms 1/4W 250V
+                </a>.
+                This Resistor is part of the Supervisor Circuit. Mouser(.com) Electronics Part Number 279-CBT25J1K0.
+                Price is approx. $ .26 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Fairchild-Semiconductor/1N4002/?qs=sGAEpiMZZMuQUXCJI7Y4lp%252baIPCshsij" target=_blank>
+                    Rectifiers 100V/1a Rectifier General Purpose
+                </a>.
+                This Diode is part of the Supervisor Circuit. Mouser(.com) Electronics Part Number 512-1N4002.
+                Price is approx. $ .18 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/2N4403-AP/?qs=%2fha2pyFadujY6FY%252bjSRQUXhzSkN%252bMyfCfy67qNSeRkc%3d" target=_blank>
+                    Bipolar Transistors - BJT 40V PNP TO92
+                </a>.
+                This 2N4403 PNP Transistor is part of the Water Temp Circuit. It is in the TO-92 Case as shown on the schematic. Mouser(.com) Electronics Part Number
+                833-2N4403-AP. Price is approx. $ .18 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Fairchild-Semiconductor/2N4401BU/?qs=sGAEpiMZZMshyDBzk1%2fWizMNjPJujLqXuERx%252bk71qoY%3d" target=_blank>
+                    Bipolar Transistors - BJT NPN Transistor General Purpose TO92
+                </a>.
+                This 2N4401 NPN Transistor is part of the Supervisor Circuit. It is in the TO-92 Case as shown on the schematic. Mouser(.com) Electronics Part Number
+                512-2N4401BU. Price is approx. $ .22 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Fairchild-Semiconductor/LM358N/?qs=%2fha2pyFaduh5FRQlJmYF7Ni3bo8SA8FX5zo8QAMg9X8%3d" target=_blank>
+                    Operational Amplifiers - Op Amps Dual Operational Amp
+                </a>.
+                This LM358 IC is part of the Low Fuel Circuit. It uses the DIP Sockets listed above. Mouser(.com) Electronics Part Number 512-LM358N.
+                Price is approx. $ .48 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/STMicroelectronics/TL431ACZ-AP/?qs=%2fha2pyFadujSgILKXkcy4kw36iucFVgwrqv0cyEn3WidOgYvgqnqaw%3d%3d" target=_blank>
+                    Voltage References 2.5-36V Prog Adjust
+                </a>.
+                This TL431 Shunt Reference Regulator is part of the Low Fuel Circuit. This is a 3 pin specialty item that looks very much like a regular transistor but has a
+                Cathode, Anode and Reference lead. Mouser(.com) Electronics Part Number 511-TL431ACZ-AP.
+                Price is approx. $ .44 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/TT-Electronics/RC07GF122J/?qs=%2fha2pyFadugi2yFpjtKKFEx5zcyjfPnu3gwddBtjL4KU26d2CRK%2fbw%3d%3d" target=_blank>
+                    Carbon Composition Resistors 1.2K OHM 5%
+                </a>.
+                This Resistor is part of the Low Fuel LED Circuit. Mouser(.com) Electronics Part Number 66-RC07GF122J.
+                Price is approx. $ .29 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/Kamaya/RC1-2335JB/?qs=%2fha2pyFaduhnn76IT92VhyAGPn8jO9NCnWSvX%252bedxVdhXLD9QesW7w%3d%3d" target=_blank>
+                    Carbon Composition Resistors 3.3Mohms 5%
+                </a>.
+                This Resistor is part of the Low Fuel Circuit. This one adds the proper Hysteresis between Pins 1 and 3 of the Comparator. Mouser(.com) Electronics Part Number
+                791-RC1/2-335JB. Price is approx. $ .40 each.
+            </li>
+            <li>
+                <a href="http://www.digikey.com/product-search/en?keywords=CT6EP503-ND" target=_blank>
+                    TRIMMER 50K OHM 0.5W TH
+                </a>.
+                This Potentiometer is part of the Low Fuel Circuit. This is our ability to adjust when we want the Low Fuel Warning LED to come on. Digi-Key Electronics Part
+                Number CT6EP503-ND. Price is approx. $ .79 each.
+            </li>
+            <li>
+                <a href="http://www.mouser.com/ProductDetail/TDK/FK26X7R1E225K/?qs=sGAEpiMZZMt3KoXD5rJ2N%2f5Yhuu121M%252bvoZL6xd%2f%2fP4%3d" target=_blank>
+                    Multilayer Ceramic Capacitors MLCC - Leaded 2.2uF 25volts X7R 10% 5.0mm L/S
+                </a>.
+                This Capacitor helps guard against incoming (from other parts of the vehicles electrical system) ripple voltages and undesired voltage spikes. Mouser(.com)
+                Electronics Part Number 810-FK26X7R1E225K. Price is approx. $ .46 each.
+            </li>
+        </ol>
+        <br />
+        <b>The Little Stuff</b>.
+        <a href="http://mcmaster-carr.com" target=_blank>Misc. Hardware, standoffs, grommets, etc.</a>. I like McMaster-Carr for all of this because I can get my
+        hardware in Stainless. They also have just about everything you can imagine for R&D projects, they keep your Card info, and their delivery times are good. You will
+        need:<br /><br />
+        <ul>
+            <li>Stranded Hookup Wire 22AWG</li>
+            <li>4 each of 5/8" long, #8 Sheetmetal screws to mount your box to the vehicle</li>
+            <li>2 each 1/4" ID / 3/8" OD rubber grommets for internal to external enclosure wiring</li>
+            <li>1/4" Adel Clamp for fastening down the LED wires</li>
+            <li>MANY Terminal Lugs and connectors of all sorts. Suggest getting one of those terminal lug kits and a good crimper</li>
+            <li>Mouser.com and Digikey.com are great sources in the USA for all of the Electronic Components.</li>
+            <li>
+                Approximate Price for all of the Misc. Items: $20, Total Cost including Shipping (be strategic when ordering this stuff so you don't pay outrageous prices for shipping)
+                <b>Grand Total for Parts for this Project: Approx. $156.63.</b>
+            </li>
+        </ul>
+    </p>
+    <p>
+        <ul>
+            <h4><b>Optional Items</b></h4>Optional Items
+            <li>
+                <a href="http://www.ebay.com/itm/370871777056?_trksid=p2060353.m2749.l2649&ssPageName=STRK%3AMEBIDX%3AIT" target=_blank>
+                    Universal Double Side Board 7x9cm 1.6mm 2.54mm PCB DIY Prototype Paper PCB
+                </a> This size is necessary because it slides into our chosen enclosure without the need for standoffs. the Ebay description is as follows: Universal
+                Double Side Board 7x9cm 1.6mm 2.54mm PCB DIY Prototype Paper PCB. Price is approx. $5.00 for 5 of them. This is the correct size for the chosen enclosure
+                and the perfect alternative if you choose to wire the board without purchasing the ready made board.
+            </li>
+            <li>
+                Prototyping Breadboard (optional but suggested) MB-102 830 Point Prototype PCB Solderless Breadboard Protoboard. This lets you put the circuit together and test
+                it before committing to the end product. Do a search on Ebay. They are about $3.00 each. Also, get the male to male wire connection kit. It makes mocking up the
+                circuit a little easier. 65pcs Solderless Breadboard Jumper Cable Wires Wire Kits Flexible Male to Male. It's worth the $3.00.
+            </li>
+        </ul>
+    </p>
+    <br /><hr /><br />
+    <h4><b>Putting it all Together</b></h4>
+    <aside>
+        These photos show the first prototype. After thinking about how hard it could be for people to find an original Delco-Remy Regulator cover, I decided to go with the
+        enclosure listed in the parts list. Everything is done almost the same way. I also decided to put the LED's on a Panel viewable by the driver as opposed to just
+        mounting them on the box. This is a very customizable system and provided you follow the Schematic Diagram, you can physically put the components anywhere.
+    </aside><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0001lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0001sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0002lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0002sm.jpg">
+    </a>
+    <p>
+        This is just a test design. My thoughts are.. WHAT ARE YOUR THOUGHTS?? So, on one hand I do not want the lights to show up on the dash because I want everything to look
+        stock. For this reason, I chose to mount the box just at the top of the drivers side kick panel. The driver will not see the lights without getting out of the vehicle
+        and looking under the dash. That is okay with some since the most critical of the systems being monitored (oil pressure and water temp) has an audio alarm. The nice
+        thing about this system is it is a double check for the gauge system and uses no part of the gauge system making it a true redundant backup system. If I see the gauges
+        do not read as expected, I can look under the dash for confirmation. If you are not as 'stock conscious', I also made it so the lights can be taken out of their mounting
+        holes and I used spade terminals so you can just make the wires longer and put them anywhere you choose. I would LOVE to hear your thoughts on this.
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0003lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0003sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0004lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0004sm.jpg">
+    </a><br /><br />
+    <p>
+        I started with the box and began by drilling one 7/8" hole for the Buzzer/Light I chose for Oil Pressure. This Buzzer/Light Combo is not in the parts list but available
+        on Ebay from time to time. I then made 4 holes for the small LED Lights so that I have 4 more choices of alarm lights. I used a Letter E drill bit because that was the
+        perfect diameter for the LED's I purchased. You can use incandescent gauge lights, or whatever floats your boat. I finished the drilling of the cover by drilling a 3/8"
+        hole on the other side for a 3/8" grommet to thread the wires through for Power, Sensors, and Alternator.
+    </p><br /><br /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0005lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0005sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0006lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0006sm.jpg">
+    </a>
+    <p>
+        Next I addressed the base of the box. I wanted it to fit inside the lip of the cover but have two tabs on it for screwing it down to the Cab interior. To do this I had
+        to cut the Cover as shown around the bottom tabs. I did that with a Dremel tool with a cutoff wheel attached. The base of the box is made out of 3/16" plate steel and
+        the dimensions before cutting was 3 inches by 5 inches. The box is 3 by 4 so that left 1/2" on each side for the tabs. I use a Dewalt Porta-Band bandsaw with Swag Offroad
+        Table to cut these out. I then layed out the parts so that everything fits. This box is really the perfect size. The relay and a fuse holder are the only things screwed
+        down to the case. I used 2 inch standoffs (10-32 threads) for screwing down the cover, 10-32 screw for holding down the relay, and 4-40 screw for holding down the fuse
+        holder. #10-32 screws use a #21 drill bit for tapping, #4-40 use a #43 drill bit for tapping.
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0007lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0007sm.jpg">
+    </a><br /><br /><br />
+    <p>
+        It takes a little doing to get all of the parts inside the box. Since this is a scalable system, it would be better to have a larger box. Especially if you feel an
+        audible alarm would be good for other systems. Of course you can use the same buzzer for multiple systems, but what if you want different sounds to differentiate?
+        That's part of the fun! Deciding how you want to customize the system.
+    </p><br /><br /><br />
+    <aside>
+        It was at this time I decided to RIGHT-SIZE the wiring. I want to use 16 gauge going out of the box to the sensors, but internally, this circuit will not ever see more
+        than a few amps, so it is amazing the amount of space this saves just by going to 22 gauge hookup wire! It's a learning process!
+    </aside><br />
+    <hr /><br />
+    <h4><b>Preparing the Black Box Enclosure</b></h4><br />
+    <p>
+        The final Black Box to hold our Critical Information System was chosen for its perfect size and compatibility with our circuit board. Since electronic
+        components are a worldwide issue, we go with the Metric System for the circuit board and the on-board components, and Inches for the outside of the Black
+        Box. This box has a special groove that accepts 7cm circuit boards and ours is 7cm by 9cm. Interestingly, the dimensions of the Black Box are 3.5 inches
+        wide, by 4.25 inches deep by 1.5 inches high. So it doesn't get any better than that!
+    </p>
+    <p>
+        We have several things to do before we start working on the inside. These activities include Drilling and Tapping in the appropriate places for our project.
+        Let us start with the end pieces. The enclosure is fully enclosed except for two end pieces that are 3 inches by 1.5 inches. The Box comes with the screws
+        for fastening them down, so all we need to do is customize each end for our purposes as shown below:
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/CISBlackBoxDiagram1.jpg">
+            <img class="Schematic1" src="/Images/Projects/WarningSystem/CISBlackBoxDiagram1.jpg">
+        </a>
+    </center><br /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0104lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0104sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0105lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0105sm.jpg">
+    </a><br />
+    <p>
+        The 3.5 inch side of each drawing is the Mounting Side of the box. On the front view, the Grommet is at the top because that is where the LED wiring comes
+        out closest to the dash. Next is the Amber LED that lights when a wire to the Temperature Sensor Thermistor is broken. Lastly, the ON/OFF switch for the
+        entire CIS system. It is lowest on the box to make it easier to get to. This box is designed to be mounted high on the driver's kick panel.
+    </p><br /><br /><br />
+    <p>
+        Another anomaly we need to content with has to do with mounting the box to ANY flat surface. The bottom of the box needs to accommodate the ability to have
+        flat head screws coming up from the bottom to secure such things as grounding wires, etc. To allow for the ability to mount it flatly, we need to raise the
+        mounting edge about 3/16". This is relatively easy to do by making two flat narrow strips. These two strips are then Epoxied to the bottom of the box with
+        JB Weld. Here is the design for that:
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/CISBlackBoxDiagram2.jpg">
+            <img class="Schematic1" src="/Images/Projects/WarningSystem/CISBlackBoxDiagram2.jpg">
+        </a>
+    </center><br /><br />
+    <p>
+        Now that the riser pads are mounted, all that is left is drilling holes for access to the two adjustment Potentiometers and drill and tap for the two audible
+        Piezo Buzzers that are mounted on the top of the box. They are mounted on top so the Driver can hear them as much as possible. We will attach the chosen
+        buzzers using 4-40 screws and to make it easier, we will tap the box so we do not have to wrestle with nuts on the inside. This means a #43 Drill Bit for that
+        purpose. The holes for the Potentiometer are drilled to 3/16". That size was chosen merely for ease of getting a screwdriver down into the box for adjusting.
+        Below is the drawing for the top view.
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/CISBlackBoxDiagram3.jpg">
+            <img class="Schematic1" src="/Images/Projects/WarningSystem/CISBlackBoxDiagram3.jpg">
+        </a>
+    </center>
+    <p>
+        To install the Piezo Buzzers, they are screwed into the tapped 4-40 holes per the diagram. I found a #37 drill bit to clear out the holes in the Piezo buzzers
+        made installation of the 4-40 screws a bit easier. The hole in between the buzzers is for the two pairs of wires to go back into the box. A 3/16" hole works
+        pretty well for that. I use a small file to relieve the sharp edges so the wires are not damaged. Since there is lots of room front to back for the circuit
+        board to slide around, I chose the placement to be pushed maximum forward so the suggested placement of the Potentiometer holes is with that in mind. The board
+        floats in the slide but with the wires all soldered to the back of the board, it will naturally push against the front, so no need to fasten it down in any way.
+    </p>
+    <p>
+        Wiring is very straightforward and we made sure to mark each hole on the circuit board for placement of everything including the wires that go to various places.
+        One place I did Deve-iate from the plan a bit was to make a ground lug on the side of the enclosure. The side that is the TOP when its installed in the Drivers
+        side kick panel, in the middle between the two installation holes, I drilled an 11/64 hole to accommodate a #8-32 by 3/4" flat head screw that protrudes out
+        of the enclosure and serves as the ground for the system. The GND wire goes to that lug on the inside and then on the outside, the lug is wired to another
+        lug that is fastened down when you screw the unit to the Kick Panel.
+    </p>
+    <p>
+        Another issue that needed to be resolved is the Thermistor Lug. The drawings elsewhere in this article provide for a very nice Lug housing for anyone having a
+        1/4" screw available on their Engines Thermostat Housing. While this works for most people with a 216/236/261 era engine, we decided we wanted to make a solution
+        that uses a beefier lug housing with the ability to install the Thermistor Sensor on any Waterpump, or Thermostat 3/8" Bolt. There are really a few ways we can
+        go with this. There is the Aluminum Barrel Lugs and there is the Steel Standard Lugs. Either one can be used and they both transfer heat sufficiently for our
+        purposes. The idea is to protect the fragile Thermistor from the elements. Our Thermistor Circuit is designed very well so that it is essentially a one wire
+        Sensor. One lead goes to the Black Box, the other lead is simply grounded to the Lug Housing. This makes for less wires to the engine which is always a good
+        thing!
+    </p>
+
+    <br /><hr /><br />
+    <a id="DashBracket"></a>
+    <aside>
+        The next thought was that people may want to actually be able to SEE the warning lights when a problem occurs and that a passive system that sounds an audible alarm
+        will not satisfy some people. So, I set out to make a bracket that will solve this problem. I wanted it to honor the stock look of the interior but have added features
+        that just made sense for someone with a 12 volt system. So here are two solutions. The first one is the Universal Bracket that is used in any Vintage Vehicle,
+        the other is specific to Advance Design Era Chevy Trucks.
+    </aside>
+    <h4><b>Making the Universal Dash Control Bracket</b></h4><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0099lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0099sm.jpg">
+    </a><br /><br />
+    <p>
+        This bracket is made out of 2 inch Angle Iron with 1/8" walls. Cut to 1-1/4" from the bend on both sides, and 3-1/4" in total length. The idea is to mount this
+        under your dash in your preferred spot using a single 1/4" hole. The bracket is tapped so that the stainless steel 1/4-20 x 1-1/4" bolt can attach very solidly.
+        To preserve it, I use etching primer, then GM Low Gloss Black, then Clearcoat. The holes that are chosen work for the LED lights that I chose for the project.
+        A letter N drill bit works best for the LED lights, then the lights have threads, locks and washers to fasten them to the bracket. Included is a 1/4" Adel
+        Clamp for securely fastening the wires. Round the corners off as you wish for style.
+    </p><br /><br />
+    <center>
+        <a href="/Images/Projects/WarningSystem/CISUniversalBracket.jpg">
+            <img class="Schematic1" src="/Images/Projects/WarningSystem/CISUniversalBracket.jpg">
+        </a>
+    </center><br /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0100lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0100sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0101lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0101sm.jpg">
+    </a><br />
+    <p>
+        Here are a few more pics of the bracket. To wire the lights in, you want to be EXTRA careful in routing these LED lights because they are very fragile and
+        the leads break off rather easily. Route the two left wires through the Adel Clamp one direction, and the right two wires the opposite, then tie wrap them
+        firmly in place leaving plenty of slack so pulling on the wires does not damage the LED's. Once the LED's are in place, use Red Terminal Male Connectors on
+        the ends for easy connection to the black box. Of course with the invention of shrink wrap, we can make it look really clean.
+    </p><br /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0102lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0102sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0103lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0103sm.jpg">
+    </a><br />
+    <p>
+        Here are the two with everything assembled ready for connection to the Black Box. No stone unturned as far as quality. The stainless steel studs and hardware
+        will keep it secured forever. I chose these particular LED's because they have a Fifties look to them complete with Jet Engine Exhausts with lights in them!
+        They will not look out of place in anyones ride. What's more, they will be one of the most useful systems in your vehicle. This bracket and the one below can
+        get anyone to thinking how to make a custom bracket for their particular tastes.
+    </p>
+    <br /><br /><hr /><br />
+    <h4><b>Making the Dash Control Bracket for Advance Design Era Chevy Trucks</b></h4><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0018lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0018sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0019lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0019sm.jpg">
+    </a>
+    <p>
+        When you look at that side of the dash, there is a lot of wasted space and with two brackets coming down to accommodate the Defroster Cable and the Parking
+        Brake, it looks disheveled and a little barren. So, I designed a bracket that took Queue's off the drop-down part of the dash in the center. I measured where
+        that center drop-down slopes off and made the new bracket an opposite twin. This way with Interior paint on it, it will almost look like it belongs there. I
+        then chose a bolt pattern to fasten it that would make the dash more solid as well as those things that are attached to it. I used 1/8" (the same as the
+        vehicles frame) for strength. Nothing flimsy about this solution!
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0017lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0017sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0021lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0021sm.jpg">
+    </a>
+    <p>
+        The Parking Brake Release has to be in the exact same spot as it was with the original bracket, so I kept this in mind when deciding on the layout. Nobody wants
+        a Defroster Cable that is in the way, so I put that nearest the Steering Column and left the center of the bracket for a Rotary style Heater Switch. This is
+        because the Stock switches are not compatible with 12 volts and after 65 years, they are wearing out. The replacements are all rotary style and we have a new
+        upgrade to your Heater system that takes full advantage of this by giving you a rotary switch with no 'positions'. The switch just turns smoothly to give you
+        every fan speed the motor can generate. More on that later. The four small holes above the Parking Brake Release is for our Warning Lights. These are small
+        colored LED's that will be under the dash enough to be subtle, yet shine brightly when a problem occurs.
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0020lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0020sm.jpg">
+    </a>
+    <p>
+        As you can see, the Heater Switch hole is centered and made for a nice heavy solid 1.5 inch knob. The Defroster Cable mounts exactly
+        across from it so that everything looks uniform. The holes will be custom for each individuals needs when ordering this plate, so don't worry if yours is
+        different. For example, not all AD era Trucks had Defroster Cables. First though, understand you can make this yourself out of a 10-3/4" piece of 1/8" by 2"
+        Angle Iron. The top mounting holes (shown) were chosen to make this piece mount very solidly in place. It uses the two dash anchor bolts on the end and then
+        a few carefully chosen holes that are in the stock locations for the rest of it. Lets see about making this plate...
+    </p>
+    <p>
+        As I stated earlier, start with a piece of 1/8" x 2" x 10-3/4" Angle Iron. This is the perfect choice for this because it will mount flush with the back of
+        the dash while providing just the right amount of overhang for our Controls. In an earlier picture you could see how I use a piece of chipboard and fashion
+        it as a template. Then you have to look at what is readily available in metal stock and compromise. In this case, I learned that the 2 inch Angle Iron was
+        a better idea than my template that was only 1-3/4". It also turns out that a 90 degree bend is about right. You can't take any of this for granted, rather,
+        test it and see for yourself. So in fashioning this dash bracket, I did some drawings and made some notations that I will share with you here.
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/FrontFaceKnobPlacementlg.jpg">
+            <img class="Schematic" src="/Images/Projects/WarningSystem/FrontFaceKnobPlacementlg.jpg">
+        </a>
+    </center><br />
+    <p>
+        Very important you follow the steps outlined here. The measurements are taken from a square piece of 1/8" Angle Iron so to measure properly, do not make
+        the cuts first, rather, drill the holes first. The Parking Brake Release Knob has to be in the exact same place it was when mounted with the stock bracket
+        so that is the only non-negotiable aspect of this. Another consideration would be how long your Defroster Cable is but in this case, we are mounting it
+        closer to the Heater, not further away. Part of a good tool arsenal is the 115 piece Drill Bit Set. It has the Wire Increments, Metric Increments and the
+        Standard Increments. Some of the stuff we do requires just the right Bit. With a Drill Doctor, those bits will last you a lifetime! All of the measurements
+        you see here are from the left side of the piece and measurements are to the exact center of each hole.
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/TopBracketDrillPatternlg.jpg">
+            <img class="Schematic" src="/Images/Projects/WarningSystem/TopBracketDrillPatternlg.jpg">
+        </a>
+    </center><br />
+    <p>
+        The measurements for holding the piece firm to the bottom of the dash are NOT reliable! What you need to do is clamp your piece of angle iron to the dash,
+        then mark the holes yourself. The reason I say this is because I do not trust that each cab was made using the exact same templates since there were many
+        factories at the time. To be safe, mark them yourself through the holes with a fine Sharpie, then punch the center of the mark for drilling. I put these
+        numbers here so you can verify your numbers are close. The third hole from the left is where the tab that was part of the original Defroster Control used
+        to be located. The last hole (right) is the last hole nearest the Steering Column. The two on the left are the standard 5/16" bolt holes used to hold the
+        dash on, then 1/4" bolts for the other two. I like how solid it is. It gives you a sense that it belongs there.
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/FrontFaceCutLineslg.jpg">
+            <img class="Schematic" src="/Images/Projects/WarningSystem/FrontFaceCutLineslg.jpg">
+        </a>
+    </center><br />
+    <p>
+        To make the front face contour look the same as the center of the dash was a big consideration. I wanted this to look like it belongs there too. It doesn't
+        quite but it's as close as you can get with a flat piece of metal. We need it flat to fulfill its purpose so we will have to compromise on the fact that it
+        is not rolled under like the center of the dash. The numbers here make the cuts from top to bottom come together so you can finish the corners with a grinder
+        to give it a more rounded appearance. The right side angle was done to replicate the dash centers same contour and also the distance from the steering
+        column. Once we have the geometry correct, we look to see how much room is left for our purposes, then design the knob placement the best we can with the
+        real estate we have.
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/TopBracketCutLineslg.jpg">
+            <img class="Schematic" src="/Images/Projects/WarningSystem/TopBracketCutLineslg.jpg">
+        </a>
+    </center><br />
+    <p>
+        The mounting surface just needs a few cuts to make it look right. The reason for the left side needing this angle is because of the way the dash is contoured
+        near the door opening. The right side is because that part is unneeded and happens to be the same angle as the front face so we can make this cut from the
+        front to the back all in one cut. To do that, lay the angle iron on the table flat (upside down V) and continue the line from front to back. You could do the
+        same thing on the left side without penalty too.
+    </p>
+    <p>
+        The LED lights is a large part of the reason for this exercise. Placed here, they will be within view and not look too conspicuous. They are LED so they will
+        last a long time, but in any case they are easily replaceable. Our control box will be placed under the dash on the upper left kick panel out of sight and
+        that is where the audio alarm will be located. Looks like things are coming together nicely!
+    </p>
+    <aside>
+        The rotary heater control is something that I decided was a necessity after testing 12 stock switches that I got in. Out of 12 random stock switches only
+        4 of them were usable. Out of the 12, half of them had bad resistors, and 4 of them had bad internal switch contacts. This is not good but 65 years later,
+        what do you expect? Since this is a toggle switch that is not easily repairable, and these switches are not compatible with a 12 volt system anyway, we need
+        to come up with a Vintage rotary style so that we can expand our choices. Cole-Hersee makes a good rotary 12 volt solution, you can get rotary replacements
+        from our usual vendors, but thanks to Wayne, another contributor, I found an even better solution. By using a DC Motor controller and a Potentiometer, we can have
+        infinite control of the fan speed while creating NO heat! This is a huge breakthrough because now you are not limited to LOW, MED, HIGH. <br /><br />
+        Learn more about this
+        <a href="/Home/Native12VUpgrade" target=_blank>HERE!</a>
+    </aside><br /><hr /><br />
+    <a id="WaterTemp"></a>
+    <h4><b>Water Temperature Sensor Installation: Testing to Find the Right Place!</b></h4><br />
+    <aside>
+        Many of you are going to great lengths to try and find a place for a second water temperature sensor for either a project like this, or an electric fan. I did some
+        very extensive testing on this subject and it's all here so you do not have to do it yourself. By using an electrical temperature sensor as the test sensor, we came
+        up with very conclusive results.
+    </aside>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0030lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0030sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0028lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0028sm.jpg">
+    </a>
+    <p>
+        First we have to find a place for the Sensor. We can't use the original location for the Water Temperature sensor since it is already being used for the Water
+        Temperature Gauge. Since the sensor needs to be in water, our choices are very limited. After thinking about it, the drivers side engine drain seems to be the
+        best choice. With adapters, we can use it as a drain AND use it for the Water Temp sensor. <br /><br />
+
+        <b>No, that doesn't work!</b> I am putting failures here so you can understand what has already been tried. No sense in doing the same thing yourself. Turns out after
+        letting the engine warm up thoroughly the maximum water temperature I can get out of that drain port is about 150 degrees. The same sensor placed in the Head
+        port goes to 180 degrees. Putting it in the Drain location would be unreliable and off by about 30 degrees. Back to the Drawing Board.
+        <br /><br />
+        So now after taking some IR Thermometer readings at the water pump, I want to try to put it in the Thermostat Housing Port used for connecting the Heater. You can
+        still connect your heater hose and even the water control there, but you want to put the sensor in first to ensure the temperature is the hottest it can be. Doing
+        all this testing means draining the water sufficiently each time but part of the process.
+        <br /><br />
+        As far as interference with the lower hose or anything, there is no conflict.
+        <br /><br />
+        <a href="/Images/Projects/WarningSystem/WarningSystem0031lg.jpg">
+            <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0031sm.jpg">
+        </a>
+        <a href="/Images/Projects/WarningSystem/WarningSystem0034lg.jpg">
+            <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0034sm.jpg">
+        </a>
+        So the Thermostat housing port has a few anomalies that are not contributing to our success. One is, you can't screw a Tee Connection into the housing because it's
+        too close to the engine. If you use a 2 inch Nipple to extend the reach, you can do that. As shown. We can't really remove the housing because this is supposed to
+        be easy for people to put into their vehicles. So having installed this as shown, it turns out to have the exact same problem a Nipple/Tee system did in our rear
+        engine drain. The fan moves the air so well, it keeps the temperatures down inside the Nipple/Tee. In this case about 20 degrees cooler than the normal 180 degrees
+        we see when the engine is at its normal operating temperature. While the Radiator measures 183 degrees, the Thermostat Housing measures 170 degrees, and the Tee/Nipple
+        measures about 150 degrees. So, that is with the standard temperature gauge sensor installed. There is no hope of the temperature getting to the 220 degrees needed
+        to set off the alarm. <b>So that idea is out the window!!</b>
+        <br /><br />
+        <aside>
+            It was at this point that I turned to a totally different, more modern approach. I decided that it is too much hassle to find a suitable place for a Thermal
+            Switch that goes inside the water stream. THE place to put it is being used by the Vintage mechanical gauge Sensor. So we turned to the same technology that
+            turns modern vehicle cooling fans on and off at certain temperatures. Of course we could just purchase a ready to use system, but what would be the fun in that?
+            Besides, they are expensive and they do not consider the other systems we must incorporate (oil pressure, etc). We will take this slow and be very meticulous in our
+            approach so we do not miss anything. This approach is every bit as accurate due to the more sensitive nature of the sensors.
+        </aside>
+    </p>
+    <hr /><br />
+    <a id="WaterTempDesign"></a>
+    <h4><b>Water Temperature Sensor Engineering and Design #1 (Test Project Only)</b></h4><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0036lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0036sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0037lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0037sm.jpg">
+    </a>
+    <p>
+        In searching the Internet for information concerning temperature sensors for automotive use we found an interesting project to help us better understand how this
+        more modern technology works. We found the Automotive Grade Thermistor to be the central component. This is basically a Thermal Resistor that senses temperature
+        changes and varies the ohm value accordingly. We ran across a design plan from ElectronicsNMore. They put out free information on Electronic projects of all kinds.
+        If you are interested in that sort of thing I would encourage you to check them out.
+    </p>
+    <p>
+        What was intriguing about this project was it does almost exactly what we want. It lights an LED when a very particular temperature is reached. It also has the benefit of
+        supporting Piezo Buzzers for an Audible Alarm System. Lets put this thing together and take it for a test drive! Here is the Schematic of this very simple project.
+        I like how few parts are needed. The fewer parts the better for reliability. This project will not be incorporated in our end design because we need a relay instead
+        of lights, but it's a very good project to better understand the technology. Relays isolate the circuit and make everything safer.
+    </p>
+    <center>
+        <a href="/Images/Projects/WarningSystem/TempSensorSchematiclg.jpg">
+            <img class="Schematic2" img src="/Images/Projects/WarningSystem/TempSensorSchematiclg.jpg" width="330" height="370" target=_blank>
+        </a>
+    </center><br />
+    <p>
+        The brains for this project is a Texas Instruments LM3914 Dot/Bar Display Driver IC. It is a 10 step voltage divider and made for this purpose. We will apply
+        12 volts for this project and it's capable of between 6.8 and 18 Volts DC. Lets get some parts on order! Everything Listed is from www.mouser.com.
+    </p>
+    <h5><b>Water Temperature Sensor Project Parts List</b></h5>
+    <p>
+        <ol>
+            <li>LM3914 18 Pin IC - Part Number 926-LM3914N-1 - $2.98</li>
+            <li>18 Pin MDIP IC Socket - Part Number 575-11091318410010 - $1.60</li>
+            <li>12v LED Green - Part Number 630-HLMP-1641 - $0.67 each - Need 4</li>
+            <li>12v LED Amber - Part Number 630-HLMP-1621 - $0.71 each - Need 3</li>
+            <li>12v LED Red - Part Number 630-HLMP-1601 - $0.67 each - Need 3</li>
+            <li>Project Board - Part Number 854-SB300 - $3.99</li>
+            <li>10K Potentiometer - Part Number 652-PCW1JB24KAB103L - $4.86</li>
+            <li>1.2K 1/4watt Fixed Resistor - Part Number 603-CFR-25JR-52-1K2 - $0.10</li>
+            <li>47K Mini-Lug Thermistor -40 to 257 degrees (F) - Part Number 594-NTCALUG03A473HC - $1.54</li>
+            <li>Standoff Spacers - Part Number 534-8401 - $0.59 - Need 4</li>
+        </ol><br />
+    </p>
+    <h5><b>References</b></h5>
+    <p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=JQzWSN9K3_c" target=_blank>ElectronicsNMore's YouTube Video</a></li>
+            <li><a href="http://www.ti.com/lit/ds/symlink/lm3914.pdf" target=_blank>Texas Instruments Guide to the LM3914</a></li>
+            <li><a href="http://www.google.bs/imgres?q=lm3914+thermistor+temperature+circuit&hl=en&client=firefox-a&hs=i2c&sa=X&rls=org.mozilla:en-US:official&biw=1272&bih=559&tbm=isch&prmd=imvns&tbnid=Tuynud0EgJ61zM:&imgrefurl=http://electronic-circuit-projects.blogspot.com/2009/03/motorcycle-temperature-gauge.html&docid=JQYwUKcENd-GjM&imgurl=http://2.bp.blogspot.com/_ZjDnZYlUxdE/Sb9ALLRoRDI/AAAAAAAAARo/oF9AaWh9jkY/s400/temperature.jpg&w=400&h=346&ei=1HY1T-byLIe2gwf0iL3oBQ&zoom=1&iact=hc&vpx=196&vpy=112&dur=2054&hovh=209&hovw=241&tx=146&ty=110&sig=106083777612127818367&page=5&tbnh=167&tbnw=193&start=66&ndsp=15&ved=1t:429,r:10,s:66" target=_blank>Original Schematic</a></li>
+        </ul><br />
+    </p>
+    <aside>
+        An LED Light such as the ones listed have one Lead shorter than the other. The Short Lead is the Cathode, the Longer Lead is the Anode. Looking at the LED
+        symbol on the above schematic, the Cathode is the Negative side and the Anode is the Positive (+12v) Side. In other words, put the long lead facing away from the
+        IC Chip and use that long lead for +12 Volts. The LED's are placed in the correct order. Pin 1 gets the first Green, then 18, then 17, etc on down the line.
+    </aside><br />
+    <h5><b>Explanation</b></h5>
+    <p>
+        Remember, this is a learning project and will not be used for the end design. We are learning how to build a circuit that incorporates all of the assets that
+        are needed to make our system successful. This is a necessary step to better understand how Thermistors and IC Drivers work. This circuit is perfect to
+        demonstrate a few features that we need. The questions we need answered are:
+        <ol>
+            <li>How do I get power to sound an alarm, AND light a light at a specific temperature?</li>
+            <li>How do I make it so that the light and alarm activate at that temperature THEN Deactivate once the temperature goes down?</li>
+        </ol>
+        So, this circuit provides most of that functionality. What are the downsides and why not just use this circuit? The Thermistor used is not Automotive grade so I
+        will have to address that. All 10 LEDs are not needed. Just the one that lights up at our desired temperature. Then there is the need to put a relay in the circuit
+        which is very easy to do, but you gotta admit, it's pretty cool!
+    </p>
+    <p>
+        To build this thing you just need to follow the Schematic carefully. Use about 24 gauge hookup wire to make all of the connections. Take it slowly and check,
+        then doublecheck your work. I used a breadboard that has solder pads on one side of it for each through hole. This provided for better anchoring of the parts,
+        but not all that necessary. It DID allow me to use solder bridging on the underside where desired. For any pointers or if you need anything just email me
+        and I will try to help.
+    </p>
+    <h5><b>Testing</b></h5>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0038lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0038sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0039lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0039sm.jpg">
+    </a>
+    <p>
+        This is a pretty cool little circuit! What's nice about it, is the potentiometer on the board allows us to control the threshold of the lights. So, for example,
+        if I want the first Amber light to represent 220 degrees, I find a 220 degree heat source and touch the Thermistor until the first Amber light lights up and control
+        that with the Potentiometer. I discovered a heat source that is within our range. A Weller Solder Pencil has about 450 degrees (or more) at the tip which is too
+        high, but the barrel of the pencil graduates down pretty slowly so I can mark the temperature using an IR Thermometer at 220 degrees for the test. SO, imagine
+        a Piezo Buzzer (Audible Alarm) in this very same circuit with the LED. We have everything we need to get this done! That concludes coverage of our little test
+        circuit. Next is an attempt to use a circuit that is ready made for our purposes! Let's see where this goes!
+    </p>
+    <br /><hr /><br />
+    <a id="WaterTempFinal"></a>
+    <h4><b>Water Temperature Sensor Engineering and Design #2 (A Possible Final Solution)</b></h4><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0040lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0040sm.jpg">
+    </a><br />
+    <p>
+        Now after understanding this technology better through trial and error, I am ready to start putting this warning circuit into practical use. I found this technology
+        is used in Automotive applications as a matter of routine in applications like electric fan control and warning circuits. I found a ready made circuit for this
+        from an Ebay source that could work. This would not be a difficult circuit to make from scratch, however, there may be no need. You will find the water temp
+        portion of our system mostly ready for use. The supplier is from Thailand so plan on about a four week wait to get the circuit.
+        I have thoroughly tested this little circuit and it is almost the perfect thing for our purposes. Because it merely energizes a 5 amp relay, it can be used for any
+        temperature sensitive application.<br /><br />
+    </p><br />
+    <aside>
+        Another very cool application for this particular circuit is for an Electric Fan Controller. The cost of this little circuit is only $14.99 plus shipping, so beats
+        the cost of any other circuit and works much better than most. Most electric fan controllers are controlled by a sensor that goes into the water stream and is set
+        to a specific temperature, usually 185 degrees. This circuit is fully adjustable from -40F to 257F degrees and provides very specific results. The only thing that
+        requires a change is the Thermistor and Lug Housing as explained below.
+    </aside>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0041lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0041sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0046lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0046sm.jpg">
+    </a>
+    <p>
+        When I say almost perfect, it is because the Thermistor Lug housing is too small to effectively adapt to our vintage vehicles. My plan is to use the 1/4" threaded hole on
+        the Thermostat Housing to attach this Thermistor Sensor. You can still use it for clamping your fuel and vac tubing, but this would just mount under all of that as
+        the first item on that stack closest to the housing. Since we cannot use the Thermistor Lug Housing, we will remove it from the Thermistor taking care not to damage
+        the Thermistor itself. We will then make our own, custom Thermistor Lug Housing to give us the 1/4" diameter hole needed to mount the sensor to our Thermostat Housing.
+        Making this special Lug Housing is not difficult and a thin piece of tin 1" by 1.5" will do the job. I will put a template here once I get the drawing done.
+    </p>
+    <a href="/Images/Projects/WarningSystem/ThermistorLugHousing.jpg">
+        <figure><figcaption>Click!</figcaption></figure>
+        <img class="PicsLeftLngWS" src="/Images/Projects/WarningSystem/ThermistorLugHousing.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0047lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0047sm.jpg">
+    </a>
+    <p>
+        Using a piece of 24 gauge tin (or thereabouts), cut a piece to 1-1/4" by 3/4". Use the drawing and mark it accordingly. Notice the way the original is bent to provide
+        a cavity for the Thermistor to lay in. This will protect the Thermistor. Bend your piece of tin as shown. It doesn't have to look pretty since it will be mostly hidden.
+        We will take protection a step further and use Heat Shrink to keep the leads separated as well as use Heat Shrink on the individual leads. It's very important to insulate the
+        Thermistor from the housing except for the ceramic end itself which will lay down in the tin cavity, then we will use high temp silicon to fill that cavity so the Thermistor
+        doesn't move. Then once the assembly is cured, we will put another piece of Shrink over the entire cavity. Do not put shrink on either of the lug surfaces. Heat transfer cannot
+        be impeded. Once this is bolted down all that is left is to figure out how to route the two sensor wires.
+    </p><br /><br />
+    <a id="WaterTempFinalSchematic"></a>
+    <h4><b>Water Temperature Sensor Engineering and Design #3 (The Final Prototype)</b></h4><br />
+    <aside>
+        At this point you are probably wondering why so wishy washy when it comes to 'PICK A CIRCUIT AND RUN WITH IT!!'. Although I can relate to the frustration since it is
+        me who is going through this process, I have a limitation that you will not. That is, I must be able to purchase or make these small circuit boards reliably. The two
+        circuit boards I have been considering, including the one above, delivery is very unreliable. I can't get them quickly or at all depending on when I order them. This poor
+        supply delivery is not conducive to a successful product. This very huge problem had me re-thinking trying to purchase ready made circuits. Not only do I hate to wait,
+        but most people who want to purchase them will also not appreciate waiting months to get them. Let's fix this once and for all!!
+    </aside>
+    <center>
+        <a href="/Images/Projects/WarningSystem/WaterTempSchematicFinalc.jpg">
+            <img class="Schematic1" src="/Images/Projects/WarningSystem/WaterTempSchematicFinalc.jpg">
+        </a>
+    </center><br />
+    <p>
+        In researching the design of Thermistor circuits, there are many different circuit designs that would work. I am interested in a very solid design that
+        completely eliminates any potential problems. This is why we are using a very stable LM393 IC that has been around for a very long time. This IC is special in that its
+        entire function is to act as a Comparator, comparing the voltage divider's output and giving us a high or low depending on the result. This gives us reliability and
+        consistency since all of the passive elements are fixed (at sampling time). One of the reasons I chose the LM393 is because it has TWO of these comparators and we only
+        need one for the water temperature, and the other Comparator is put to use by incorporating a Supervisory Circuit into the design. Without a supervisor circuit,
+        there is no way to know if one of the Thermistor wires aren't cut since during normal engine operation, there is no way to prove the circuit is working. With this
+        addition, we will always know that the two wires going across the engine, to the Engines Thermostat Housing are in tact and the circuit is working flawlessly. The
+        Supervisory portion has an Amber LED that is mounted to the Enclosure next to the ON/OFF switch acting as a Circuit Fault Warning Light. If that light ever comes
+        on, the end user will know there is most likely a broken wire. A defective circuit would be highly unlikely.
+    </p>
+    <p>
+        The Schematic above will work beautifully and consistently each and every time. In developing this circuit on an experimental breadboard, then extending wiring to ensure
+        the sensitivity is not lost, all has proven very solid. The Relay type system is THE way to go. The relay isolates the more amp-hungry components as well as acts as an
+        electronic switch. This circuit is adaptable for use with Automotive Electric Fan systems or any other 12VDC application you can think of
+        where a Thermistor sensor is used. This is why the relay makes sense. We can add a higher amperage relay to drive higher amp fan systems.<br /><br />
+    </p>
+    <br /><hr /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0050lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0050sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0051lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0051sm.jpg">
+    </a>
+    <p>
+        <br />
+        Left is the Protoboard version of the circuit without the Relay and right is the same circuit on the breadboard. The reason I made sure to have plenty of room left over
+        is because I am also putting on this same board a Supervisor circuit that will use the remaining 3 pins of the LM393 and some more components. We will then add a second
+        Comparator for the Low Fuel circuit next.
+    </p>
+    <br /><br /><br /><br /><hr /><br />
+    <a id="LowFuelWarn"></a>
+    <h4><b>Low Fuel Warning Circuit Addition</b></h4><br />
+    <p>
+        This is the last circuit addition for the Basic System. This is the only part of our entire System design where any part of the existing measurement system is used. In
+        this case, we need to use the existing Fuel Sending Unit. It just wouldn't be prudent to create another low fuel sender when the one you already have does its job just
+        fine. The idea is to set this circuit up so the end user can adjust exactly where they wish to be warned the fuel is low. If you live 30 miles to the nearest gas station,
+        you might want to adjust it differently than the person with a gas station down the street. We will use a 50K ohm Potentiometer that will be adjustable from empty to
+        half full.
+    </p>
+    <p>
+        The Fuel Sending unit has a float on the end of an arm that moves up and down with the level of the gasoline in your tank. 30 ohms is a full tank, and 0 ohms is an empty
+        tank. At the same time, 0 volts is an empty tank and 1.6 volts is a full tank. The system was designed so that no sparks can be present at the gas tank, but for their to
+        be an ohm value, voltage must be present. This enables us to create a circuit that will alert us very reliably when the tank is low on fuel. Since this unit measures in
+        millivolts, it is very precise. Even if your sending unit is a 50 or 75 ohm unit, it won't matter. We won't bother adding a relay or anything other than a warning light
+        for this circuit, so this will make it very basic and reliable.
+    </p><br />
+    <aside>
+        If you want to see how to make your original 6 volt fuel gauge system work with 12 volts, check out <a href="http://devestechnet.com/Home/Native12VUpgrade" target=_blank>Going Native!</a>
+        Near the bottom of the page we go into various reducers as well as the best way, which is using 12 volt native parts.
+    </aside><br />
+    <center>
+        <a href="/Images/Projects/WarningSystem/LowFuelWarningCircuitSchematica.jpg">
+            <img class="Schematic1" src="/Images/Projects/WarningSystem/LowFuelWarningCircuitSchematica.jpg">
+        </a>
+    </center><br />
+    <center>
+        <b>
+            (Circuit Design Courtesy of our Friends at <a href="http://allaboutcircuits.com" target=_blank><b>All About Circuits</b></a>. Special Thanks to Dr. Mike Mladejovsky, Phd EE
+            for his patience and constraint!)
+        </b>
+    </center><br />
+    <p>
+        This addition incorporates another Op Amp (LM358) and a three terminal adjustable shunt regulator (TL431) to monitor the very low voltage that is present in the Sending
+        Unit portion of the Stock Fuel Gauge. Once the voltage goes low enough, an LED will alert the driver of a low fuel situation. I wanted this system to be fully adjustable
+        from a half full tank to completely empty. The system incorporates a Potentiometer for that adjustment. It also works with either 6 volt gauges with the standard voltage
+        reducer, or upgraded 12 volt gauges. In addition, the Ohm value of the Sending Unit can be anything below 75 ohms.
+    </p>
+    <br /><hr /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0057lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0057sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0058lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0058sm.jpg">
+    </a>
+    <p>
+        <br />
+        Left is the Protoboard version of the Low Fuel Warning Circuit. Right is the entire Fuel system and how it is hooked up for bench testing.
+    </p>
+    <br /><br /><br /><br /><br /><br /><hr />
+    <h4><b>Putting it all Together</b></h4><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0068lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0068sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0071lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0071sm.jpg">
+    </a><br />
+    <p>
+        So we have all of the individual circuits working and tested but individually. Charging System LED, Oil Pressure LED/Audible, Water Temperature LED/Audible and Low Fuel
+        Warning LED. Now all we have to do is put them all on one circuit board and make them work together. The same care and precision we have used to design and test the
+        individual circuits will be observed and nothing will be overlooked. This is real progress!
+    </p><br /><br /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0076lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0076sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0088lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0088sm.jpg">
+    </a><br />
+    <p>
+        These new circuits will incorporate quite nicely into the system as a whole and are relatively inexpensive to make. The time to put the component parts together and test
+        the circuit is about a day. Assembly of the entire warning system is longer of course, requiring drilling various holes in the enclosure and wiring everything. This
+        solution is very possibly the best way to go since availability of the ready made boards are so sporadic. There are other advantages, for example none of the ready made
+        boards come with an automotive grade Thermistor and have to be replaced. Parts are not the best quality and things like DIP sockets are non-existent. I am doing this for
+        my friends, so it's really a no-brainer!
+    </p><br />
+    <p>
+        This puts us at about January of 2016 and there is still much to do. From a prototype design, we need to put this circuit into production and have suitable circuit boards
+        made. I am still contemplating if I should solder all of the components on myself or have the board manufacturer do it. I will put pricing and availability here so you
+        can learn something too! Meanwhile there is lots to do in melding these circuits together and learning a new software program that efficiently turns a schematic diagram
+        into a circuit board design.
+    </p><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0094lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0094sm.jpg">
+    </a>
+    <p>
+        <b>Enter a program called DipTrace.</b> Back in the late 70's when we were making upgrades for the original Atari computers, we had to use nasty chemicals and trace material for
+        this. Now, you just spend a week or so learning how to use the software, and off you go! This program is really the ticket for this application. It starts you off having
+        you enter your entire schematic diagram into its Schematic Applet. I learned that this is not a proper schematic, rather an electrical representation of what we need the
+        end result to look like. The difference is that an LED (or any component) that is not on the circuit board will just be two pads labeled "LED2" for example.
+    </p>
+    <p>
+        Once the schematic is put in and everything is right, time to "Convert to PCB" which throws all the parts out there for you to move around into a coherent circuit board.
+        Its quite fun really figuring out all the nuances. I thought I was done many times and had to go back and fix the schematic and start all over again. It's a learning
+        process. The program is free for 300 pin applications or less. Since this project has a little more than a hundred, it was free for this project. In the end, from start
+        to finish learning this program to ordering the boards, it took about 2 weeks. The program has an agreement with Bay City Circuits and two of these boards with shipping
+        cost me $65.00 with a 10 day delivery time. I do not want more than that for the first order because I am not sure enough of my work to purchase them in bulk yet. When I
+        do, I am sure I can get the cost below $25 a board.
+    </p>
+    <p>
+        Remember, after all of this journey, we are not using anyone else's circuit boards for any part of the design. This system is all on one board and incorporates all of the
+        advertised features without relying on anyone else's schedule or parts availability to get this done. That is a very big deal! Here are a few shots of the PCB Design just
+        after I placed the order.
+    </p>
+    <span class="restopics">
+        <a id="restopagepics"></a>
+        <div class="HowToTitle1">DipTrace PCB Representations</div><br />
+        <center>
+            <a href="/Images/Projects/WarningSystem/WarningSystemCISToplg.jpg"><img src="/Images/Projects/WarningSystem/WarningSystemCISTopsm.jpg" width="200"></a>
+            <a href="/Images/Projects/WarningSystem/WarningSystemCISBottomlg.jpg"><img src="/Images/Projects/WarningSystem/WarningSystemCISBottomsm.jpg" width="200"></a>
+            <a href="/Images/Projects/WarningSystem/WarningSystemCISContrastlg.jpg"><img src="/Images/Projects/WarningSystem/WarningSystemCISContrastsm.jpg" width="200"></a>
+        </center>
+    </span><br /><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0106lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0106sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0108lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0108sm.jpg">
+    </a>
+    <p>
+        The completed boards were delivered via Priority USPS and instead of the two that I ordered, I received three! I was astonished by the quality and how perfect
+        they looked. Everything that was represented on the computer screen and printed out on an inkjet printer was exactly the same only with much higher resolution.
+        I have absolutely NO problems with the boards I received from Bay Area Circuits. These pictures were taken after I got them. The size is perfect for our
+        enclosure and everything is properly marked. Very impressive! The cost for the two boards I ordered was 64.50 including shipping. So a little over $30 each. I
+        am sure I could get them made in China for much less, but that is not the way I am leaning right now. It is wonderful we have this service in the US and I very
+        much want to support our industry.
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0109lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0109sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0110lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0110sm.jpg">
+    </a><br /><br /><br />
+    <p>
+        Here is what the prototype looks like beside the actual manufactured product. This is just part of the process to make one the hard way and test it before
+        having the good ones made. I am glad I do not have to do that over again! But the prototype works MUCH better than it looks!
+    </p>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0112lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0112sm.jpg">
+    </a><br /><br /><br /><br /><br />
+    <p>
+        Here is the new board fully populated. All of the rest of the connections on the board are to components that are not on the board. We are getting pretty
+        close to testing this out. Stay tuned!
+    </p>
+
+
+
+    <br /><br /><br /><br /><br /><hr /><br />
+    <h4><b>Presenting the Final Prototype!</b></h4><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0043lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0043sm.jpg">
+    </a>
+    <a href="/Images/Projects/WarningSystem/WarningSystem0044lg.jpg">
+        <img class="PicsRight" src="/Images/Projects/WarningSystem/WarningSystem0044sm.jpg">
+    </a>
+    <p>
+        Here is the completed Warning System Prototype. The Water Temperature circuit changed a few things that I had to go back and correct in the article. Designing the circuit from
+        scratch removed the requirement for an 8 pin relay and gave us the advantage of going to a set of mini 20 amp PCB Relays. This allowed me to use a small box for our system
+        which makes it easier to hide under the dash. The switch completely kills the power to the box and inside of the box is a 10 amp fuse mainly to protect our circuit
+        from any surges by an outside source. The Piezo Buzzers are on the outside to ensure they are loud enough to the driver. The driver should hear the alarm and pull
+        over immediately and shut off the ignition. This resets the system. In any other case, the driver can reach down and flip the switch if it becomes irritating.
+    </p><br />
+    <a href="/Images/Projects/WarningSystem/WarningSystem0045lg.jpg">
+        <img class="PicsLeft" src="/Images/Projects/WarningSystem/WarningSystem0045sm.jpg">
+    </a><br />
+    <p>
+        There is a shot of the completed prototype. The idea is to give those who want a lighting system that choice in a tasteful bracket that uses the unused left side
+        of the dash. It is also a really good time to change over to a DC Motor Controller and Linear Potentiometer for your Heater! If you do not like the looks of this
+        dash piece, you can opt for just the warning box with the Audible Alarm only and just leave the lights off entirely. This article is not complete and I will be adding
+        more detailed instruction in the coming days. Stay tuned!
+    </p><br /><br /><br /><br /><br />
+    <p><center>Questions or Comments? Email <a href="mailto:deve@speedprint.com?subject=Warning System">Deve</a></center></p>
+    <br /><br />
+</div>

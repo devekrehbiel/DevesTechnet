@@ -1,0 +1,346 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Deve's TechNet Home Page";
+    ViewBag.Message = "Start Your DTN Journey Here!";
+}
+<div class="row">
+    <div class="col-md-3">
+        @*<div class="nowhitespace">*@
+            <aside>
+                <h4><b>Happening Now!</b></h4>
+                &nbsp;&bull; Tip of the Week in <a href="http://forums.devestechnet.com/forum/technet-technical-support-1947-1955-chevy-trucks" target=_blank><b>Forums</b></a><br />
+                &nbsp;&bull; Critical Information System in <a href="/Home/WarningSystem" target=_blank><b>How-To</b></a><br />
+                &nbsp;&bull; Native 12 Volt Upgrades in <a href="/Home/Native12VUpgrade" target=_blank><b>How-To</b></a><br />
+                &nbsp;&bull; GM HEI Explained! At<a href="/Home/Index" target=_blank><b> Home</b></a><br />
+            </aside>
+            <aside>
+               <div class="Open24">
+                    <img class="Open24" src="/Images/Animated24Hours.gif">
+                </div>
+                <h4><b>Welcome to TechNet!</b></h4>
+                <p>
+                    This site is fully modernized in that it displays equally as well on a SmartPhone or Tablet as it does on a laptop or desktop computer.
+                    <a href="http://forums.devestechnet.com" target=_blank>DTN Forums</a> work the same way. We hope this makes the site more useful. The
+                    information presented here is proudly presented in a no-nonsense format that cuts directly to the chase. This solution driven format
+                    is designed to give you the answers you need and hopefully prompt questions/answers that will help others. Your participation is essential.
+                    Every person with interest in the restoration process can and should help their fellow enthusiasts by sharing information. Click on the
+                    <a href="http://forums.devestechnet.com" target=_blank><b>DTN Forums</b></a> heading above to take you to your Tech Forums.
+                </p>
+                <div class="SSimage">
+                    <img class="SSimage" name="slide" src="/Images/SlideShow/Alberta1950.png" width="150" height="75" alt="License Plates" />
+                </div>
+                <p>
+                    The site is rich in <a href="/Home/HowTo" target=_blank><b>How-To Articles</b></a> and we are putting more and more
+                    content on the site every day. We encourage you to check out all of the content on the menu bar above because there is hopefully something
+                    for everyone.
+                </p>
+                <p>
+                    What sets us apart from every other site is when we create a solution to a particular problem, we carefully document exactly how to make
+                    the solution yourself. If you do not have the shop or equipment to make it yourself, we will do it for you. One of the most sacred tenants
+                    of this site and everything contained herein is that we give our information out at no cost to anyone. There are no profit motivations here,
+                    just good clean solutions. If that is something that is fun for you, you have come to the right place!
+                </p>
+                <p>
+                    The License Plate Slideshow would not be possible without Operation License Plate. If you have license plate pictures to share, please
+                    go to the <a href="http://forums.devestechnet.com/forum/technet-members-gallery/1149-operation-license-plate-your-help-needed" target=_blank><b>DTN Forums</b></a>
+                    and submit yours!
+                </p>
+            </aside>
+            <hr />
+            <center>
+                <h3><b>Free Ads for our Friends</b></h3>
+                <hr />
+                <div id="ads">
+                    <ul class="bxslider">
+                        <li><a href="http://www.oldchevytrucks.com"><img src="/Images/Advertisements/JimCarterAd.gif" alt="Jim Carter" /></a></li>
+                        <li><a href="http://www.1954advance-design.com"><img src="/Images/Advertisements/TimsLogo.gif" alt="Tim Lederman" /></a></li>
+                        <li><a href="http://chev235guy.blogspot.com"><img src="/Images/Advertisements/DavesBlog.gif" alt="Dave Folsom" /></a></li>
+                        <li><a href="http://chevytalk.com"><img src="/Images/Advertisements/ChevyTalk.gif" alt="Chevy Talk" /></a></li>
+                        <li><a href="http://chevy.oldcarmanualproject.com"><img src="/Images/Advertisements/KeithHardy.gif" alt="Keith Hardy" /></a></li>
+                        <li><a href="http://devestechnet.com"><img src="/Images/Advertisements/DevesTechNeta.gif" alt="Deve" /></a></li>
+                        <li><a href="https://www.flickr.com/photos/advance-design_parts_co/"><img src="/Images/Advertisements/BradAllen.gif" alt="Brad Allen" /></a></li>
+                    </ul>
+                    <h4><b>If your Ad is not here, <br />email deve@speedprint.com</b></h4>
+                    <hr />
+                </div>
+            </center>
+        @*</div>*@
+        <div class="HomeTitle1">Brad Allen's Slideshow Project</div>
+        <div class="rightsidehtxt">
+            <p>
+                I don't know how he does it, but my friend Brad Allen has put together some very rare footage of our precious
+                Advance Design trucks and allowed us to present them to you. You will find these slide-shows throughout the site.
+                Some of them are very instructional and all of them are quite interesting! I hope you have as much fun watching
+                as I do!<br /><br />
+            </p>
+            <center>
+                <div class="creditsfront">SLIDES COURTESY OF BRAD ALLEN</div>
+                <div class="slideshowcontainery">
+                    <input type="hidden" id="slideShowGo" value="true" />
+                    <input type="hidden" id="slideShowImgId" value="1" />
+                    <input type="hidden" id="MethodName" value="GetImagesFromFrontPageDirectory" />
+                    <div class="centerdangit">
+                        <img id="slideShow" src="/Images/OtherSlideShows/FrontPageAds/0001adlg.jpg" />
+                        <img id="ajaxLoad" src="/Images/Loading.gif" width="128" height="128">
+                        <center>
+                            <button class="btn btn-primary btn-xs" id="prev" type="button">&laquo;</button>
+                            <button class="btn btn-primary btn-xs" id="stopTheShow" type="button">StartMeUp!</button>
+                            <button class="btn btn-primary btn-xs" id="next" type="button">&raquo;</button><br />
+                        </center>
+                        <button class="btn btn-primary btn-xs" id="useMain">Ads Pt1</button>
+                        <button class="btn btn-primary btn-xs" id="useOther">Ads Pt2</button>
+                        <br /><br />
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <aside>
+            <h4><b>The <a href="/Services/Index" target=_blank>Farm-It-Out Section</a> is now online!</b></h4>
+            This is offered so that anyone not having the shop or tools to make some of the documented modifications found here on the site can own them too. We encourage you
+            to built it yourself with our free instructions, but if you can't do it, this is a great way to enjoy the inventions and modifications found here. Funding goes to
+            support research and development of future projects and continued operation of this site.
+        </aside>
+        <aside>
+            <h4><b>Check out our Technical Forums!</b></h4>
+            We need YOUR help in making our Technical Forums World Class. Please go to the <a href="http://forums.devestechnet.com" target=_blank><b>DTN Forums</b></a>
+            and participate in the discussion. It's easy to do and there is a new
+            <a href="http://forums.devestechnet.com/forum/technet-technical-support-1947-1955-chevy-trucks/1394-tip-of-the-week-for-october-4-10-2015" target=_blank>
+                <b>Tip of the Week</b>
+            </a> each week for you to comment on starting with the one above. Whatever you do, don't forget to
+            <a href="http://forums.devestechnet.com/register?urlpath=" target=_blank><b>Register!</b></a>
+        </aside>
+        <div class="myjumbotron2">
+            <div class="featuretitle2">Feature Article: The GM HEI System Explained!</div>
+            <div class="featuretext2">
+                I was trying to help someone the other day in explaining the advantages of HEI, but it always makes me feel like I am being self serving since I
+                designed one specifically for our engines that uses your stock Distributor and works just as GM designed it. So, I searched the Internet looking
+                for a decent, very accurate article and found the perfect one. Here it is from one of the most respected resources out there:<br /><br /><br />
+
+                <div class="learnmore3">
+                    <a href="http://www.hemmings.com/magazine/mus/2008/11/The-lost-art-of-servicing-GM-HEI/1719426.html" target=_blank class="butn-blue">Hemmings Motor News: The Lost Art of Servicing GM HEI &raquo;</a>
+                </div><br />
+                <p>
+                    One of the other issues that I get asked a lot is "What is the difference between GM HEI and Pertronix?" Despite what the advertisements for                    Pertronix say, the units they sell are strictly 'Points Replacement' units. They have no artificial intelligence behind them. Pertronix units go inside
+                    the Distributor and replace the Points and Condenser. They are a great low-budget solution and they work very well. They are easy to install and they
+                    really do the job for which they were intended very well. I have heard very few complaints about them. They are popular because they are relatively
+                    inexpensive, remove the points and condenser from the equation replacing them with no moving parts to wear out, and another reason to like them is
+                    they take away the dwell issues of Points and the problem of Jitter caused from the Distributor shaft wear over time. Your engine WILL run better
+                    with a Pertronix unit instead of Points.
+                </p>
+                <p>
+                    The difference between Pertronix and GM HEI is yet even greater! GM HEI has artificial intelligence that makes it leaps and bounds better from a
+                    logical perspective. The GM HEI has an Electronic Ignition Module. This Module, although quaint by today's standards, was the grandfather of our
+                    modern electronic control modules which are considered on-board computer systems. The GM HEI Module gives the system its ability to self adjust the
+                    dwell based on Engine RPM. Its secondary function is to speed up dramatically the ramp and fire circuit to 3.6 milliseconds which enabled much faster
+                    coil response. What this means is, we can use hotter coils since we are no longer limited to 12,000 volts, which is about the maximum a points system
+                    has time for in one complete cycle. This means a more complete burn of leaner fuel mixtures. It also has a current control circuit that keeps the
+                    amperage of the entire ignition system down to 5.5 amps.
+                </p>
+                <p>
+                    Aside from the above, the GM HEI System removed the resistor circuit from the mix. This means no more reducing the points and condenser down to 6
+                    volts which was the practice right up until GM HEI was introduced in 1975. The Resistor Circuit is what that big paint melting ballast resistor that
+                    is on your firewall was used for. By transferring half of the available power to heat, Delco was able to keep the 6 volt production line going clear
+                    into the 1970's! The GM HEI system uses no resistors and with transistorized current control, as stated earlier, keeps the current limited to 5.5
+                    amps. In fact, it craves the full 12 volts of power and is much happier with a 45,000 volt, .7 ohm coil with the spark plugs gapped to .045. as
+                    stated in the above article, it really is a very well engineered system. So, no matter where you get your GM HEI System, plan on a much more precise
+                    and much hotter spark, extra power in 3rd or 4th gear, and a much happier Engine!
+                </p>
+            </div>
+        </div>
+        <div class="myjumbotron">
+            <img class="featurepic" src="/Images/Projects/WarningSystem/WarningSystem0001lg.jpg" width="200">
+            <div class="featuretitle1">In the Works:  Critical Information System for your Vintage Vehicle</div>
+            <div class="featuretext1">
+                This is almost complete! This system monitors your Oil Pressure, Water Temperature, Alternator Charging System and Fuel System then alerts you if any of
+                these parameters do not meet normal parameters. Some of us value our Vintage Rides more than our daily drivers, so now you can have the ability to let
+                your vehicle tell you when things are not going as planned while being an independent redundant system for your most critical systems. Scalable to include
+                more systems, audible vs. lights only, etc. It even includes a very useful Dash bracket!
+                <br /><br /><br />
+            </div>
+            <div class="learnmore2">
+                <a href="/Home/WarningSystem" target=_blank class="btn btn-primary btn-md">Check This Out! &raquo;</a>
+            </div>
+        </div>
+        <div class="myjumbotron1">
+            <div class="featuretitle1">
+                Project #1:  1959 235 Engine Rebuild Project!
+            </div>
+            <div class="featuretext1">
+                <img class="featurepic" src="/Images/Projects/Project1959235/Project59235306lg.jpg" width="200">
+                The idea was to explain in detail the steps it takes to properly rebuild a 1959 235 6 Cylinder Engine. From start to finish, this article goes through
+                every aspect of a rebuild, from tear-down, to the engine shops work, to rebuilding each subsystem, right through to engine adjustment and run-up. This
+                article was completed in the Summer of 2015 with really great results. If you have engine questions, there is a distinct possibility the answers are in
+                this article.<br /><br />
+            </div>
+            <div class="learnmore1">
+                <a href="/Home/Project1959235" target=_blank class="btn btn-primary btn-md">Completed Engine Project Here! &raquo;</a>
+            </div>
+        </div>
+        <div class="myjumbotron">
+            <div class="featuretitle1">Project #2:  High Energy Ignition Plus!</div>
+            <div class="featuretext1">
+                <img class="featurepic" src="/Images/Projects/HEIgnition/FeatureImage.gif" width="200">
+                The Plus is, we use the Stock Distributor you already have! To make it even better, we make no permanent modifications to your vintage distributor.
+                The GM HEI system is well known for its hotter spark, more efficient burn of today's gas formulas, and a cleaner, smoother running engine. As our
+                friend, Jim Linder, a renowned Ignition Specialist puts it: "The HEI as built by GM could very well be the best overall ignition system out there ever.
+                It has a varying dwell based on engine RPM and a ramp and fire circuit using 3.6 ms and 5.5 amps output with current control." If you have converted
+                to a 12 volt system, you are on your way! Check out the fuel mileage tests and all of the particulars! Very exciting! KITS AVAILABLE NOW!!
+            </div><br />
+            <div class="learnmore2">
+                <a href="/Home/HEIgnition" target=_blank class="btn btn-primary btn-md">It's All Here Sparky! &raquo;</a>
+            </div>
+        </div>
+        <div class="myjumbotron1">
+            <img class="featurepic" src="/Images/Projects/Shifter/FeatureImage.gif" width="200">
+            <div class="featuretitle">Project #3:  3 on the Floor!</div>
+            <div class="featuretext">
+                Grandma always had a 3 on the Tree in her grocery getter, but Grandpa drove real trucks so he went with 4 on the floor!
+                In our Feature Article we will show a brand new solution that puts the 3 speed shifter exactly where the original 4 speed
+                comes up out of the floor making the truck look like a stock 4 speed. It may not be the Higgs Boson, but it really
+                revolutionizes the way we look at the vintage 3 speed transmission...
+            </div><br />
+            <div class="approved">
+                <img src="/Images/AnimatedApproved.gif"></>
+            </div>
+            <div class="learnmore">
+                <a href="/Figures/ShifterMech.pdf" target=_blank class=" btn btn-primary btn-md">Project 3 on the Floor! &raquo;</a>
+            </div>
+        </div><br />
+        @*<div class="myjumbotron">
+            <div class="featuretitle1">In The Works: 12 Volt Heater Restoration Project!</div>
+            <div class="featuretext1">
+                <a href="/Images/Projects/12VUpgrade/12VUpgrade0041lg.jpg">
+                    <img class="featurepic" src="/Images/Projects/12VUpgrade/12VUpgrade0041sm.jpg" width="200">
+                </a>
+                The Heater System in these trucks can be one of the most neglected systems both from a maintenance and an engineering perspective. If you have upgraded
+                to a 12 volt power system, it may very well need some TLC before firing up the heat for the Winter.<br /><br />
+                If you want to know more about your Heater System and how to stay warm and toasty without worry, check out the article and join the discussion in
+                <a href="http://forums.devestechnet.com/forum/technet-the-think-tank/electrical-systems-projects/1390-the-heater-system" target=_blank>The Think Tank!</a>
+            </div>
+            <br />
+            <div class="learnmore2">
+                <a href="/Home/HeaterRestore" target=_blank class="btn btn-primary btn-md">Turn up the Heat with Confidence! &raquo;</a>
+            </div>
+        </div>*@
+    </div>
+    <br /><hr />
+    <div class="HomeTitle1">New and Refreshed How-To Section</div>
+    <div class="rightsidehtxt">
+        <p>
+            What this site is all about is documenting How-To articles to help you finish your Truck Restoration with full confidence. Over the years we have
+            accumulated a few things to help you. Most of these articles were written upon request by kind and knowledgeable people who freely give their
+            time for an worthy cause. If you know something and wish to share it, check out the How-To pages and maybe they will prompt you to write what
+            you know, and others would certainly appreciate.
+        </p>
+        <p>
+            The How-To section is broken up in sections to make navigation easier. We have a pretty extensive
+            <a href="/Home/HowTo#engine" target=_blank><b>Engine Archive</b></a> with just about every aspect of your vintage engine covered.
+            The <a href="/Home/HowTo#driveline" target=_blank><b>Driveline Archive</b></a> includes some very rare and important Borg Warner
+            R10 Overdrive Transmission Documents along with a few other Driveline related articles. We would love to have more in this section so if you know something,
+            please share! The <a href="/Home/HowTo#sheetmetal" target=_blank><b>Chassis and Sheetmetal Archive</b></a> has documents from how
+            to Re-Rivet your Frame to how to Cut and Install Bed Wood. This section could use some help as well. Don't be shy! Writing an article doesn't take that
+            much time and look at what you are doing for others! The <a href="/Home/HowTo#misc" target=_blank><b>Misc. Systems Archive</b></a>
+            is getting stronger and includes Electrical systems so has become very popular. There is alot of stuff in these documents that is new or not previously
+            looked entirely into. We are in the middle of researching some of the more nuanced issues so check back often. The most fun for me is to add things to the
+            <a href="/Home/HowTo#shop" target=_blank><b>Shop Systems Archive</b></a>. There just isn't enough time in the day to look into all
+            of the Shop helpers out there. Anyone with similar interests, write up a Shop Tip or...
+        </p>
+        <p>
+            <b>Start your own Blog using our Forum Software!</b> All you have to do is register to be a Member of the DTN Forums and go to the Blog Tab and start your
+            very own! If you have a quick idea that is more suited for the Forums, leave the tip and start the conversation in the appropriate Tech Forum. Your
+            participation will be appreciated by everyone here! Best of all it's 100% FREE!<br /><br />
+        </p>
+        <div class="rightbutton"><a href="http://forums.devestechnet.com/forum/" target=_blank class="btn btn-primary btn-sm">DTN Forums</a></div>
+    </div>
+</div>
+<hr /><br />
+<div class="row">
+    <div class="col-md-6">
+        <div class="myjumbotron">
+            <div class="featuretitle1">Spin-On Filters for Everyone!</div>
+            <div class="featuretext1">
+                <a href="/Images/Projects/FullFlowOil/oilfilter20lg.jpg">
+                    <img class="featurepic" src="/Images/Projects/FullFlowOil/oilfilter20lg.jpg" width="200">
+                </a>
+                We decided to engineer a bracket system for all styles and types of oil systems so there is something for everyone. For both Bypass and Full Flow Oil
+                Filtration, these Spin-On Adapters make changing oil just a little easier. In addition, they add a little Style using Stainless Braided Hoses. Great
+                for any 216/235/261.<br /><br />
+            </div>
+            <div class="learnmore2">
+                <a href="/Home/FullFlowOil" target=_blank class="btn btn-primary btn-md">The Spin Starts Here! &raquo;</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="myjumbotron">
+                <div class="featuretitle1">PCV Upgrades!</div>
+                <div class="featuretext1">
+                    <a href="/Images/Projects/PCVInstall/pcv0026lg.jpg">
+                        <img class="featurepic" src="/Images/Projects/PCVInstall/pcv0026sm.jpg" width="200">
+                    </a>
+                    The 216/235/261 era was the last to NOT have PCV as a standard system. We know now how important evacuating crankcase gases is to the
+                    longevity of your engine. This is a simple weekend project that will keep your engine internals cleaner. It won't bring about
+                    World Peace or anything, but it's not for the lack of trying!
+                </div><br />
+                <div class="learnmore2">
+                    <a href="/Home/PCVInstall" target=_blank class="btn btn-primary btn-md">Ditch The Draft Tube! &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="rightsidehtxt">
+            <div class="HomeTitle1">DTN.. Forums with a Unique Twist...</div><br />
+            <p>
+                If you spend much time on Forums, you know how it works. 90% of the information you get is from the Peanut Gallery. People who like to talk and are
+                short on actually doing the work of investigating the issues are usually the most vocal. Yet, it would be very difficult to live without them. This
+                is because for every 100 idiots, there are about five people who really know what they are doing. So we sift through the posts and try to make sense
+                out of the answers posted. This leaves us with the possibility of making poor choices from the poor answers we received on any given day.
+            </p>
+            <p>
+                To stop this dead in its tracks, we have a Forum where conjecture that is not based on actual math and science isn't acceptable and thus deleted as
+                soon as we see it. Participants understand the importance of explaining in detail WHY and exactly HOW. So, we are very short on Participants! Not alot
+                of traffic in the Forums. Those of you who are hesitating, understand this is not the normal Forum system, so flaming and the normal dynamic that
+                we all have to put up with everywhere else will not be tolerated here. If you are looking for THE answer to your specific problem without the time
+                wasting BS that is just an integral part of any Forum system, then post your question and expect to be treated with kindness and understanding each
+                and every time.
+            </p>
+            <p>
+                <b>The Think Tank</b> is another unique feature available to everyone. If you have an inventive spirit and wish to design a solution to any problem
+                pertaining to our vintage vehicles, our shops, or anything surrounding restoration, post your idea and expect others to help you accomplish your goal.
+                This particular area of the Forums is for Research and Development which often times is not very pretty! Anyone with R & D experience can attest to
+                the trial and error nature of it all. Upload all the pictures, diagrams, movies, links, anything you need right into the Forum. No hosting sites
+                necessary.
+            </p>
+            <p>
+                We are so much stronger as a society when everyone participates, so please stop by from time to time and make sure to critique whatever you feel we
+                need to work on. Thanks in advance for making this project a success! There are several projects just waiting for participants, so please check them
+                out. We are always looking for new ideas, so please tell us your ideas! Check it out at <a href="http://forums.devestechnet.com" target=_blank>TechNet Forums!</a>
+            </p>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script type="text/javascript" src="/Scripts/Slideshow.js"></script>
+    <script type="text/javascript" src="~/Scripts/SlideShowAds.js"></script>
+    <script type="text/javascript" src="/Scripts/FrontPageSlideShow.js"></script>
+    <script type="text/javascript" src="/Scripts/Signshow3.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".bxslider").bxSlider({
+                pause: 5000,
+                auto: true,
+                randomStart: true,
+                pager: true,
+                hideControlOnEnd: true,
+                autoControls: true
+            });
+        });
+    </script>
+}
+

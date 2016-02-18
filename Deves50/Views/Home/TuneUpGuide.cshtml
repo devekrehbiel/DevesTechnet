@@ -1,0 +1,228 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "The Chevy 216/235/261 Tuneup Guide";
+    ViewBag.Message = "Stovebolt Tune-Up Tech";
+}
+<div class="HowToTitle1">The Chevy 216/235/261 Tuneup Guide</div><br />
+<aside>
+    As with all of the content on this website, you can simply click on any picture to get its largest size. In this way,
+    we can maintain the clearest definition to make it easier for you to see the detail. If the picture is so big you can't
+    see all of it on your screen, all you have to do is hold down CONTROL and move the mouse wheel up and down to resize!
+</aside><br />
+<aside>
+    <a href="~/Images/Restorations/1950B/D50b00475lg.jpg">
+        <img class="PicsLeft" img src="~/Images/Restorations/1950B//D50b00475sm.jpg">
+    </a><br />
+    <p>
+        <b>
+            This is a really special How-To since we have an expert Nathan Hall doing the writing for it. I then personally verified the procedure
+            on my 261 engine. Let me know if there is anything we left out!
+            <br /><br />
+            In addition, here is Brad Allen's slide-show presentation direct from General Motors in 1952, Complete Engine Tune-up, and the 2nd one is pictures
+            we took during the tuneup procedure.
+        </b>
+    </p><br /><br />
+</aside><br />
+<div class="credits">SLIDES COURTESY OF BRAD ALLEN</div>
+<div class="slideshowcontainerx">
+    <input type="hidden" id="slideShowGo" value="true" />
+    <input type="hidden" id="slideShowImgId" value="1" />
+    <input type="hidden" id="MethodName" value="GetImagesFromTuneUpDirectory" />
+    <div class="centerdangit">
+        <img id="slideShow" src="/Images/OtherSlideShows/TuneUpGuideJam/TU0001lg.jpg" max-width="550" height="500" />
+        <img id="ajaxLoad" src="/Images/Loading.gif" width="128" height="128">
+        <p class="centerme">
+            <button id="prev" type="button">&laquo;</button>
+            <button id="stopTheShow" type="button">Start the Show!</button>
+            <button id="useMain">GM's Word</button>
+            <button id="useOther">Nate's Word</button>
+            <button id="next" type="button">&raquo;</button>
+        </p>
+    </div>
+</div>
+<hr />
+<div class="aside1main">
+    <a href="~/Images/Restorations/1950B//D50b00757lg.jpg">
+        <img class="PicsLeft" img src="~/Images/Restorations/1950B//D50b00757sm.jpg">
+    </a>
+    <a href="~/Images/Restorations/1950B//D50b00752lg.jpg">
+        <img class="PicsRight" img src="~/Images/Restorations/1950B//D50b00752sm.jpg">
+    </a>
+    <div class="HowToTitle1">Tuning Up The Old StoveBolt!</div>
+    <div class="TitleByLine"> A Tuning Procedure by Nathan Hall</div>
+    <p>
+        So happens that while Nate was writing this procedure, I had the need to use it on my newly rebuilt 261. As an amateur restorer, I
+        first set out to create the engine stand (front end of a badly burned out 1954 3100) and a portable starting caddy I call The Start
+        Kart. The cart has two battery bays, storage for the compression tester, timing light, misc fittings, etc., a one gallon gas tank
+        with filter, a charger, an electrical strip and a complete set of gauges. Most people put all that on the engine stand, but I wanted
+        it portable so I could roll it up to anything to diagnose problems. It was the perfect thing for this project. The wiring from the
+        gauges to the engine is a 20 foot bundle wrapped in 3/8” fuel line hose. The engine stand has its own radiator and exhaust system
+        complete with the hoses to run the exhaust outside. As long as I stick to straight 6’s I will be fine! Now on to the important
+        stuff... This is a simple DIY job that’ll wake up that old worn out clattering & smoking engine in your vintage rig.
+    </p>
+    <div class="HowToTitle3">Making Your Own Static Timing Light</div>
+    <p>
+        If you are rebuilding your engine and haven't started it yet, Static Timing is a very valuable tool for getting your engine in the
+        ballpark. Get a 12 volt dash light bulb and solder a red wire to the pointed tip and a black wire to the side of the bulb. Put
+        Alligator Clips on the ends. Now you have your basic Static Timing Light in case you can’t find one! A must-have for static
+        timing your Vintage Rig!  A Multimeter set to DC Volts will also do.
+    </p>
+    <p>
+        To begin with, you’ll need some basic tools:<br />
+        <ul>
+            <li>Spark Plug Wrench</li>
+            <li>Open End and Box End Wrenches</li>
+            <li>Various Screw Drivers</li>
+            <li>Static Timing Light</li>
+            <li>Feeler Gauges for Spark Plugs (wire type preferred)</li>
+        </ul>
+    </p>
+    <p>
+        Most Auto Parts stores sell spark plug gauges for around $5, be sure to get one with .040 size stamped on it. The Counterman should show you how
+        to use it on a new spark plug. They are never EVER pre-gapped like they tell you. Additional tools to make this job easier and turn out better
+        are a Tach/Dwell meter and a Dynamic timing light. These are available at Thrift Stores or Pawn Shops very affordably. Do not pay more than $5
+        unless you personally test it first.
+    </p>
+    <div class="HowToTitle3">Getting Started</div>
+    <p>
+        To begin, the cylinders are numbered from 1 to 6 from the front of the engine to the back. Remove the #1 spark plug wire from both the cap and
+        the plug so later on you’ll have a reference point. GM L6 engines have the firing order the way the wires connect: 1, 5, 3, 6, 2, 4. This is
+        easy if you think about Women: 15 is TOO YOUNG, 36 is TOO OLD, and 24 is JUST RIGHT. Nate-- my wife begs to differ.
+    </p>
+    <a href="~/Images/Restorations/1950B//D50b00478lg.jpg">
+        <img class="PicsRight" img src="~/Images/Restorations/1950B//D50b00478sm.jpg">
+    </a>
+    <p>
+        Remove the spark plugs and line them up in a row the same order you removed them. If any have heavy, black & greasy encrusted deposits you
+        should know which cylinder they came from. Hold one spark plug up so you can look across the working part. The center thing is the electrode
+        and it’s critical this is flat across its top with sharply defined shoulders. If the shoulders (edges) of the center electrode are rounded
+        at all, the engine will not run well. Spark plugs are cheap. Just buy the standard copper cored ones, never platinum or multi-electrode ones.
+        They don’t work like the picture on the box.
+    </p>
+    <p>
+        Holding the plug inverted, slide the .040 feeler gauge between the center and curved over electrodes. What you want is the electrodes to *just*
+        touch but no drag. Using the wire type gauge is best here. You want it as close to .040 as possible and never any less than .036 no matter
+        what the old book says.
+    </p>
+    <p>
+        To change the gap just tap the plug on a hard surface, the cement driveway, etc. It’ll bend a little bit with each tap so go gently. You can
+        use a tiny screwdriver to carefully scrape the side electrodes clean but do not scrape the center electrode as it’s easy to crack or break the
+        ceramic insulator part.
+    </p>
+    <p>
+        All clean and gapped (adjusted) now? Good, set them aside and remove the distributor cap. Most have metal spring clips on each side. Use a
+        short flat-bladed screwdriver up near the top of each spring to pop them loose. Don’t allow the cap to slide off center until both clips are
+        loose. Make a note of the empty #1 wire location relative to the clips in the distributor so you can put it back in the same place later.
+    </p>
+    <a href="~/Images/Restorations/1950B//D50b00470lg.jpg">
+        <img class="PicsLeft" img src="~/Images/Restorations/1950B//D50b00470sm.jpg">
+    </a>
+    <p>
+        Looking in, you should see the plastic rotor piece. It may have some burn marks on the outer metal tip but this is ok. Depending on the year,
+        either it will have a bent up metal blade in the center or it will be flat in the center of the rotor and the distributor cap will have a spring
+        loaded carbon brush, never both.
+    </p>
+    <p>
+        Grab the fan pulley and rotate the engine. It’ll turn fairly easy because the spark plugs are out. the points have a little plastic rubbing block
+        that rubs on the distributor’s center shaft. The shaft has high points called 'lobes' and what you want is to stop turning the engine as the
+        rubbing block is on the highest point of any lobe. This holds the points wide open for adjusting. Find the .016 feeler gauge and wipe it clean
+        with a clean and dry cloth or towel, then see how loosely it fits between the open points. There is one screw you can loosen to allow the points
+        to move and be adjusted by placing a screwdriver tip between the notch in the base of the points and the distributor’s plate. Take a moment to
+        find this and gently twist the screwdriver to open or close up the points until the .016 feeler blade just barely slides in between them, then
+        snug up the screw and test the gap again as it occasionally moves when you tighten the screw. All set?
+    </p>
+    <a href="~/Images/Restorations/1950B//D50b00476lg.jpg">
+        <img class="PicsRight" img src="~/Images/Restorations/1950B//D50b00476sm.jpg">
+    </a>
+    <p>
+        Take the distributor cap in your hand and just turn it over with the remaining wires attached so you can find the Number One wire again. Place
+        it back on the distributor, twist it until the clips line up and you feel the cap click into place on the distributor. Don’t clip it on yet.
+        Make note of where the empty #1 plug wire connection is in the cap and rotate the engine until the rotor is pointing at that position, then
+        place the cap and snap the clips back into place.
+    </p>
+    <a href="~/Images/Restorations/1950B//D50b00468lg.jpg">
+        <img class="PicsLeft" img src="~/Images/Restorations/1950B//D50b00468sm.jpg">
+    </a>
+    <p>
+        Now look above and behind the starter at the engine and you’ll see a small hole about 1 inch in diameter. inside that hole is the flywheel and
+        hopefully you will be able to see a small ball bearing (like a bb) that’s pressed into a hole in the flywheel. There is also a sharp pointer in
+        the upper edge of the hole pointing down. these are timing marks so you must wipe them clean with rags until you can clearly see both the
+        pointer and the ball bearing. I like to make a circle around the ball bearing pressed into the flywheel with chalk or a white crayon.
+        Swmbo’s white finger nail polish, etc.
+    </p>
+    <p>
+        Turn the ignition key to the on position. Now connect your static timing light to the wire leading between the distributor and the ignition
+        coil, then connect the other end to the engine somewhere where it will get a good ground. With the key in the on position, see if the light
+        lights up. If it never lights up you have an electrical problem somewhere. you need to find that before proceeding. It could be the light, the
+        way it is connected, the coil, the condenser, the points, the cap, the coil or wire or several other things a mouse has eaten through while the
+        car sat idle in the barn.
+    </p>
+    <aside>
+        <b>Note from Deve:</b> I had a hard time understanding this because i was over-thinking it. a static timing light is totally different from a
+            dynamic timing light in its connection to the engine and its use. Static is for engine off, dynamic is for a running engine. At this point
+            in the procedure, since he had you put the rotor on the #1 spot on the distributor cap, the points should be closed causing the light to be
+            'just' off. The test lamp will turn on when the points are open and off when they are closed. When you turn the distributor body until the test
+            lamp just turns on (or multi-meter displays 12 volts) you have located the point where the coil will fire to create the spark. Locking the
+            distributor down in this position sets the static timing for the engine. A static light will light every time the points are open so it's imperative
+            that you are on the #1 plug.
+    </aside>
+    <a href="~/Images/Restorations/1950B//D50b00472lg.jpg">
+        <img class="PicsRight" img src="~/Images/Restorations/1950B//D50b00472sm.jpg">
+    </a>
+    <p>
+        What you want to do is this turn the engine backwards (counterclockwise) until the BB disappears then very slowly rotate it clockwise, watching
+        both the test light and the pointer in the hole. You want the light to come on just as the BB lines up on the pointer, but it rarely does so if
+        they line up but no light, stop it there and loosen the pinch clamp at the base of the distributor where it connects to the engine. just loosen
+        it a tad, the original screw takes a flat blade screwdriver. Once it's loose you can twist it slowly until the light *just* comes on, then snug
+        up the screw again and test the timing by rotating the engine again.
+    </p>
+    <p>
+        (Note this is using a static timing light for this. I typically check with a dynamic timing light I have that requires you to pull a trigger
+        while rotating the engine which requires three hands which I don’t have so I keep the button depressed with a rubber band.) I know this takes
+        time and effort but *you* can do this, be patient!
+    </p>
+    <p>
+        Once it’s timed, replace the gapped spark plugs and re-connect the plug wires going 'round clockwise beginning with #5, then #3, then 6, 2, 4
+        and you’re done. Go try to start it. It should roar to life and idle well. If nothing else, at least remove and re-gap the old spark plugs to
+        .040. You’ll be amazed at how much better it'll run and you can brag to neighbors about how you tuned it up yourself and maybe even make a few
+        dollars tuning up and re-awakening other oldies! --Nate
+    </p>
+
+    <div class="HowToTitle3">Bonus Material: Testing Your Compression...</div>
+    <p>
+        <b>Safety Note:</b> I have a friend who nearly had his face blown off because he had a spark plug too close to the hole it came from when he
+        tried to crank the engine. Make sure the ignition is off or the distributor cap is removed before attempting anything that requires removal
+        of a spark plug! Safety always first!!
+    </p>
+    <p>
+        If you have the desire to know the overall health of your engine, a good place to start is with checking the compression. A few things contribute
+        to low compression such as piston ring wear and valve adjustment. There is another How-To on the website by our very own Nate on how to adjust
+        your valves. Do that first! It will make a huge difference in the way your engine runs. Purchase a compression gauge kit, I got mine from Harbor
+        Freight and it is one of the better tools you can get from there. I am very pleased. It comes with all of the connectors, fittings, and then
+        some that you need. I paid around $20.
+    </p>
+    <a href="~/Images/Restorations/1950B//D50b00467lg.jpg">
+        <img class="PicsLeft" img src="~/Images/Restorations/1950B//D50b00467sm.jpg">
+    </a>
+    <p>
+        With the ignition switch off (make sure its off), remove all the spark plugs and the distributor cap. Prop the throttle wide open to get the
+        most accurate reading. Screw the fitting into the #1 spark plug hole until the rubber o-ring squashes just a bit. Turn the engine over (with
+        the starter) long enough for the compression gauge to register the compression number of the cylinder. Keep cranking until the gauge needle
+        stops rising - This is important. Record the number, release the gauges pressure (small push button on the gauge) and do it again to make sure
+        it's reading very close. Do this on every cylinder one at a time. On the 261 engine I recently worked on, the numbers were #1 - 140 • #2 - 137
+        • #3 - 138 • #4 - 137 • #5 - 137 • #6 - 138. They need to be within 5% of each other and your numbers may vary. Any numbers above 95 psi means
+        the engine is ok and will run well. Compression as low as 65 psi should be okay, but may smoke and idle poorly. As you can see with a new
+        engine, they are in the 130 range.
+    </p>
+    <br /><br />
+    <p>
+       <b>More great information available at devestechnet.com. Discuss these issues and more at forums.devestechnet.com.</b>
+    </p>
+</div>
+@section scripts {
+    <script type="text/javascript" src="/Scripts/TuneUpSlideShow.js"></script>
+}
+
+
+
+

@@ -1,0 +1,117 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Axle Ratio/Tire Size Calculators";
+    ViewBag.Message = "Tire Size Calc Info";
+}
+<script type="text/javascript" src="/Scripts/tirecalc.js"></script>
+<div class="HowToTitle1">Axle Ratio/Tire Size Calculators</div>
+<div class="SmallTitle">
+    These calculators were created by <a href="mailto:mark@4lo.com">Mark Medina</a> -
+    <a href="http://www.4lo.com">http://www.4lo.com</a>
+</div>
+<p style="text-align:center">
+    Here are a few calculators that may be useful in deciding tire size, gear ratios, and other stuff. Stop by 4lo.com for these
+    calculators and more!<br />
+</p>
+<form>
+    <div class="tablecont">
+        <div class="calctitle">Speedometer Converter <a class="clcttlhref" href="calchelp.php"></a></div>
+        <div class="calcbuttons"><input class="compute" type="button" value="Compute" onclick="compute6(this.form)" /><input class="reset" type="button" value="Reset" onclick="clear6(this.form)" /></div>
+        <div class="calcleft">
+            Original Tire Diameter: <input class="calcinput" type="text" name="otd" /><br />
+            New Tire Diameter: <input class="calcinput" type="text" name="ntd" />
+        </div>
+        <div class="calcright">
+            Speedometer Reading: <input class="calcinput" type="text" name="sv" />
+        </div>
+        <div class="results">
+            Corrected Speed (mph):<br />
+            <input class="calcinput" type="text" name="ns" />
+        </div>
+    </div>
+</form>
+<form>
+    <div class="tablecont">
+        <div class="calctitle">Find New Gear Ratio With New Tire Size <a class="clcttlhref" href="calchelp.php"></a></div>
+        <div class="calcbuttons"><input class="compute" type="button" value="Compute" onclick="compute2(this.form)" /><input class="reset" type="button" value="Reset" onclick="clear2(this.form)" /></div>
+        <div class="calcleft">
+            New Tire Diameter: <input class="calcinput" type="text" name="nt" /><br />
+            Old Tire Diameter: <input class="calcinput" type="text" name="td" />
+        </div>
+        <div class="calcright">
+            Current Gear Ratio: <input class="calcinput" type="text" name="ar" />
+        </div>
+        <div class="results">
+            New Gear Ratio:<br />
+            <input class="calcinput" type="text" name="na" />
+        </div>
+    </div>
+</form>
+<form>
+    <div class="tablecont">
+        <div class="calctitle">Find Overall Crawl Ratio <a class="clcttlhref" href="calchelp.php"></a></div>
+        <div class="calcbuttons"><input class="compute" type="button" value="Compute" onclick="compute4(this.form)" /><input class="reset" type="button" value="Reset" onclick="clear4(this.form)" /></div>
+        <div class="calccenter">
+            Transmiss Ratio: <input class="calcinput" type="text" name="tr" />
+            TransCase Ratio: <input class="calcinput" type="text" name="tc" /><br />
+            Axle Ratio: <input class="calcinput" type="text" name="ar" />
+        </div>
+        <div class="results">
+            Overall Ratio:<br />
+            <input class="calcinput type=" text" name="or" />
+        </div>
+    </div>
+</form>
+<form>
+    <div class="tablecont">
+        <div class="calctitle">Find MPH <a class="clcttlhref" href="calchelp.html"></a></div>
+        <div class="calcbuttons"><input class="compute" type="button" value="Compute" onclick="compute3(this.form)" /><input class="reset" type="button" value="Reset" onclick="clear3(this.form)" /></div>
+        <div class="calccenter">
+            RPM: <input class="calcinput" type="text" name="rp" />
+            Tire Diameter: <input class="calcinput" type="text" name="td" />
+            Axle Ratio: <input class="calcinput" type="text" name="ar" /><br />
+            Transmiss Ratio: <input class="calcinput" type="text" name="tr" />
+            TransCas Ratio: <input class="calcinput" type="text" name="tc" />
+        </div>
+        <div class="results">
+            MPH:<br />
+            <input class="calcinput" type="text" name="mp" />
+        </div>
+    </div>
+</form>
+<form>
+    <div class="tablecont">
+        <div class="calctitle">Find RPM <a class="clcttlhref" href="calchelp.html"></a></div>
+        <div class="calcbuttons"><input class="compute" type="button" value="Compute" onclick="compute1(this.form)" /><input class="reset" type="button" value="Reset" onclick="clear1(this.form)" /></div>
+        <div class="calccenter">
+            MPH: <input class="calcinput" type="text" name="mp" />
+            Tire Diameter: <input class="calcinput" type="text" name="td" />
+            Axle Ratio: <input class="calcinput" type="text" name="ar" /><br />
+            Transmiss Ratio: <input class="calcinput" type="text" name="tr" />
+            TransCas Ratio: <input class="calcinput" type="text" name="tc" />
+        </div>
+        <div class="results">
+            RPM:<br />
+            <input class="calcinput" type="text" name="rp" />
+        </div>
+    </div>
+</form>
+<form>
+    <div class="tablecont">
+        <div class="calctitle">Convert P-Metric Tire To Tire Diameter Inches <a class="clcttlhref" href="calchelp.html"></a></div>
+        <div class="calcbuttons"><input class="compute" type="button" value="Compute" onclick="compute5(this.form)" /><input class="reset" type="button" value="Reset" onclick="clear5(this.form)" /></div>
+        <div class="calccenter">
+            Example: 195/75R15<br />
+            <input class="calcinputnomr" type="text" name="sw" />
+            <span class="tireratio">/</span>
+            <input class="calcinputnomr" type="text" name="as" />
+            <span class="tireratio">R</span>
+            <input class="calcinput" type="text" name="rim" />
+        </div>
+        <div class="results">
+            Tire Diameter:<br />
+            <input class="calcinput" type="text" name="td" />
+        </div>
+    </div>
+</form>
+

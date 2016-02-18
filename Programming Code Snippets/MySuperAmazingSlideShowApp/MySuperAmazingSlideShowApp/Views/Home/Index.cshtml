@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Pure awesomeness</h1>
+    <p>This is an amazing slideshow!</p>
+    <input type="hidden" id="slideShowGo" value="true"/>
+    <input type="hidden" id="slideShowImgId" value="1"/>
+    <input type="hidden" id="MethodName" value="GetImagesFromOneDirectory"/>
+    <p class="center">
+        <button id="prev" type="button">&laquo;</button>
+        <img id="slideShow" src="/Content/Images/FirstImage.jpg" width="200" height="200" alt="Awesome slideshow dude!!!"/>
+        <img id="ajaxLoad" src="/Content/awesomeload.gif" width="128" height="128" alt="loading..." />
+        <button id="next" type="button">&raquo;</button>
+    </p>
+    <p>
+        <button id="stopTheShow" type="button">Stop it!</button>
+        <button id="useMain">Use the main directory!</button>
+        <button id="useOther">Use the other directory!</button>
+    </p>
+    <p>Let's see how horribly this tanks!</p>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        $(function() {
+            setupTheSlideShow();
+            setupButtons();
+        });
+
+        var setupButtons = function() {
+            $('#prev').on('click', function() {
+                goPrevious();
+            });
+            $('#next').on('click', function() {
+                goNext();
+            });
+            $('#stopTheShow').on('click', function () {
+                if ($('#slideShowGo').val() == "true") {
+                    $(this).html('Make it Go!');
+                    stopIt();
+                } else {
+                    $(this).html('Stop it!');
+                    makeItGo();
+                }
+            });
+            $('#useMain').on('click', function() {
+                $('#MethodName').val("GetImagesFromOneDirectory");
+                $('#slideShowImgId').val(0);
+                goNext();
+            });
+            $('#useOther').on('click', function() {
+                $('#MethodName').val("GetImagesFromOtherDirectory");
+                $('#slideShowImgId').val(0);
+                goNext();
+            });
+
+        }
+
+        var setupTheSlideShow = function() {
+            autoRotate(true);
+        }
+
+        var goNext = function() {
+            var slideShowImgId = $('#slideShowImgId').val();
+            ++slideShowImgId;
+            switchSlides(slideShowImgId);
+        }
+
+        var goPrevious = function () {
+            var slideShowImgId = $('#slideShowImgId').val();
+            --slideShowImgId;
+            switchSlides(slideShowImgId);
+        }
+
+        var autoRotate = function(start) {
+            var shouldRotate = $('#slideShowGo').val();
+            console.log(shouldRotate);
+            if (shouldRotate == "true" && !start) {
+                goNext();
+            }
+            setTimeout("autoRotate()", 10000); // milliseconds
+        }
+
+        var switchSlides = function (imgId) {
+            var method = $('#MethodName').val();
+            $('#slideShow').hide();
+            $('#ajaxLoad').show();
+            $.get("/Home/" + method + "?imgId=" + imgId).done(function (response) {
+                console.log(response); // this will show us the response
+                $('#slideShow').attr('src', response["imgPath"]); // this is probably wrong gotta tweak it a little
+                $('#slideShowImgId').val(response["imgId"]);
+                $('#ajaxLoad').hide();
+                $('#slideShow').show();
+            }).fail(function(error) {
+                console.log(error);
+            });
+        }
+
+        var stopIt = function() {
+            $('#slideShowGo').val('false');
+        }
+
+        var makeItGo = function() {
+            $('#slideShowGo').val('true');
+        }
+    </script>
+}

@@ -1,0 +1,9 @@
+I have a VS2013 ASP.NET MVC C# web site I am creating for myself. It has about 20 view pages, 1 controller, no models yet. Small. VERY small. What I would like to do is the following:
+
+1) Site Search functionality. A user inputs a keyword, or keywords and presses the GO button, and it finds all instances. I want the search box to be in the navbar, and its already there. I do not want to use Google or any other source because I do not want any advertisements on the site.
+
+2) Slideshow functionality. The user should be able to press start, stop, back, forward. I want to be able to place rather long (paragraph) sized sentences to the left and/or to the right of the pictures. Most importantly, I want the pictures to dynamically load from folders on the computer. (Ajax). I also want to be able to style the borders, text, look of the slideshow thru CSS.
+
+I would LIKE the programmer to TeamViewer in to my computer so I can watch how they do it, but that may be asking too much. This is a site for Antique Chevy Trucks and I am just a hobbyist with the desire to share, so I hope I can afford to have this done. Thank you for your time. 
+
+http://www.novasoftware.com/ContactUs.aspx?linkid=icon

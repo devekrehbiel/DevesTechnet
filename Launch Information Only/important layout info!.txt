@@ -1,0 +1,137 @@
+.navbar {
+    max-height: 30px!important;
+    min-height: 30px!important;
+    position: relative!important;
+    margin-top: 35px!important;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px!important;
+    border-radius: 6px!important;
+    border-color: black!important;
+    border-width: 2px!important;
+    background-color: blue!important;
+}
+/*.navbar-inverse {
+    background-color: blue!important;
+}*/
+.navbar-nav > li > a  {
+    color: #efcf0b!important;
+    position: relative!important;
+    display: block!important;
+    padding-top: 2px!important;
+    padding-bottom: -10px!important;
+    padding-left: 8px!important;
+    padding-right: 8px!important;
+}
+.ul.nav.navbar-nav {
+    float: left;
+    color: #efcf0b!important;
+    padding-top: 8px!important;
+    padding-bottom: -10px!important;
+    font-size: 20px!important;
+    line-height: 10px!important;
+    margin-left: -100px!important;
+    padding-left: -80px!important;
+}
+.navbar-collapse.collapse {
+display: block !important;
+border: solid black 3px;
+height: auto !important;
+position: absolute;
+padding-bottom: 0;
+overflow: visible !important;
+visibility: visible !important;
+}
+.navbar-collapse.in {
+overflow-y: auto;
+}
+.navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-right: 15px;
+padding-left: 15px;
+overflow-x: visible;
+-webkit-overflow-scrolling: touch;
+border-top: 1px solid transparent;
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+.navbar-inverse .navbar-nav > li > a {
+color: #9d9d9d;
+}
+.nav {
+padding-left: 0;
+margin-bottom: 0;
+list-style: none;
+}
+/*.navbar-inverse .navbar-collapse {
+    color: blue!important;
+    border-color: black!important;
+    border-width: 2px!important;
+}*/
+
+<header>
+        <div class="graphicupperleft"><img src="/Images/sidetopart.gif"></></div>
+        <div id=hgroup>
+            <div id=imageone><img src="/Images/header1.gif" height="100"></div>
+            <div id=imagetwo><img src="/Images/header2a.gif" width="100"></div>
+            <div class=lineone>Deve's Technical Network</div>
+            <div class=linetwo>Advance Design Chevy Trucks</div>
+            <div class=linethree>(1947-1955 1st Series w/ some TF)</div>
+        </div>
+    </header>
+
+
+<body>
+    <header>
+        <div class="graphicupperleft"><img src="/Images/sidetopart.gif"></></div>
+        <div id=hgroup>
+            <div id=imageone><img src="/Images/header1.gif" height="100"></div>
+            <div id=imagetwo><img src="/Images/header2a.gif" width="100"></div>
+            <div class=lineone>Deve's Technical Network</div>
+            <div class=linetwo>Advance Design Chevy Trucks</div>
+            <div class=linethree>(1947-1955 1st Series w/ some TF)</div>
+        </div>
+    </header>
+    <div class="navbar navbar-top navbar-inverse">
+        @*<div class="container">*@
+        @*style="background:#323d7a;*@
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+			@Html.ActionLink("Deve's TECHNet", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("History", "History", "Home")</li>
+                <li>@Html.ActionLink("How-To", "HowTo", "Home")</li>
+                <li>@Html.ActionLink("Restorations", "Restorations", "Home")</li>
+                <li>@Html.ActionLink("Resources", "Resources", "Home")</li>
+                <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
+                <li>@Html.ActionLink("**TechNet**", "TechNet", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="footer">
+                <a href="/Home/Index"> Home</a> | <a href="/Home/History"> History</a> | <a href="/Home/HowTo"> How-To</a> |
+                <a href="/Home/Restorations"> Restorations</a> | <a href="/Home/Gallery"> Gallery</a> | <a href="/Home/TechNet"> TechNet</a> |
+                <a href="/Home/Contact"> Contact</a><br>&copy; @DateTime.Now.Year - Site by Deve - All Rights Reserved
+            </div>
+        </footer>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </div>

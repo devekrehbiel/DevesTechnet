@@ -1,0 +1,20 @@
+﻿@using Deves50_Shared.Search
+@model IEnumerable<SampleData>
+
+@{
+    ViewBag.Title = "Search Results";
+}
+<h2>@ViewBag.Title</h2>
+
+@foreach (var result in Model)
+{
+    <div class="searchResult">
+        <h3>
+            <a href="@result.Url">@Html.Raw(result.Title)</a>
+        </h3>
+        <p>@Html.Raw(result.Contents)...</p>
+        <p><a href="@result.Url">@result.Url</a>
+        </p>
+        <hr />
+    </div>
+}

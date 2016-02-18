@@ -1,0 +1,65 @@
+header {
+	font-family: Verdana, sans-serif;
+}
+.graphicupperleft {
+	height: 150px;
+	float: left;
+	margin-top: 0;
+}
+.lineone {
+	font-size: 14pt;
+	line-height: 18pt;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	color: blue;
+	vertical-align: middle;
+	padding-top: 3px;
+}
+	
+.linetwo {
+	font-size: 20pt;
+	font-style: bold;
+	font-weight:bolder;
+	text-align: center;
+	line-height: 30pt;
+	vertical-align: middle;
+}
+	
+.linethree {
+	font-size: 12pt;
+	font-style: bold;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 22pt;
+	vertical-align: middle;
+}
+#hgroup {
+	width: 750px;
+	height: 100px;
+	margin: auto;
+	border: none;
+	vertical-align: middle;
+	padding: 2px;
+}
+	
+#imageone {
+float: left;
+height: 100px;
+width: 100px;
+margin: auto;
+}
+
+#imagetwo {
+float: right;
+height: 100px;
+width: 100px;
+margin: auto;
+display: inline-block;
+}
+
+footer {
+font-size: 10pt;
+font-style: normal;
+text-align: center;
+}

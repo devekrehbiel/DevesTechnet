@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="2PruwNSf_pEtHP-wEANO9uujRtS4VEhrI5iexnH_vf8" />
+    <meta author="Deve Krehbiel" name="Deve's Technical Network" description="Technical Information on 1947-1955 Chevy Trucks"
+          content="How-To and Design Data" keywords="DTN, Old Chevy Trucks, Vintage Chevy Trucks, Antique Chevy Trucks,
+          Old GMC Trucks, 1947-1955, Parts, Services, Items for Sale, Technical Information" />
+    <meta name="revised" content="Deve Krehbiel, 12/1/2014" />
+    @*<meta http-equiv="refresh" content="60" />*@
+    <title>@ViewBag.Title</title>
+    <link href="/Images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("/Scripts/bootstrap-hover-dropdown.js")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/bxslider")
+    @******************Google Analytics Script Start********************@
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-58309113-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    @******************Google Analytics Script End********************@
+    
+<meta name="description" content="Deve's 47-55 Advance Design Page" />
+</head>
+<body>
+    <header>
+        <div class="graphicupperleft"><img src="/Images/sidetopart.png"></></div>
+        <div id=hgroup>
+            <div id=imageone><img src="~/Images/AnimatedService.gif"></div>
+            <div id=imagetwo><img src="~/Images/AnimatedParts.gif"></div>
+            <div class=lineone>Deve's Technical Network</div>
+            <div class=linetwo>Advance Design Chevy Trucks</div>
+            <div class=linethree>(1947-1955 1st Series w/ some TF)</div>
+        </div>
+        <div class="Commentz">
+            <marquee behavior="scroll" direction="left" scrollamount="2">
+                <img src="~/Images/biplane.png" background="transparent" height="50" />-----< Comments? Criticisms? Help Desk: <a href="mailto:deve@speedprint.com?subject=Your Website">deve@speedprint.com</a> Open 24/7/365! >
+            </marquee>
+        </div>
+    </header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-brand" img alt="Brand" src="/Images/Brand.png" background="transparent" width="80" height="60">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Home/Index">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button" aria-expanded="false">How-To<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Home/History">AD Historical Data</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/Home/HowTo">How-To Index</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engine Solutions</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Home/HowTo#engine">Engine Related ALL</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/Home/HEIgnition">HEI for your Stock Dizzy</a></li>
+                                    <li><a href="/Home/PCVInstall">PCV for your 216/235/261</a></li>
+                                    <li><a href="/Home/FullFlowOil">Spin-On Filters & Full Flow Oil</a></li>
+                                    <li><a href="/Home/Project1959235">Total Rebuild: 1959 235</a></li>
+                                    <li><a href="/Figures/enginerebuildingchecklist.pdf">Rebuilders Checklist</a></li>
+                                    <li><a href="/Home/CastingNumbers">ID Casting # Matrix</a></li>
+                                    <li><a href="/Home/HeadTorque">Head Torque Specs</a></li>
+                                    <li><a href="/Home/ValveOiler">216 Valve Oiler Diagram</a></li>
+                                    <li><a href="/Home/FuelFilter">Fuel Filter Placement</a></li>
+                                    <li><a href="/Home/AirFilter">Air Filter Options</a></li>
+                                    <li><a href="/Figures/enginetiming.pdf">Timing Your Engine</a></li>
+                                    <li><a href="/Home/TuneUpGuide">Tuning the Old Stovebolt</a></li>
+                                    <li><a href="/Home/ValveAdjust">Valve Adjustment Procedures</a></li>
+                                    <li><a href="/Home/StockIgnition">The Stock Ignition System</a></li>
+                                    <li><a href="/Home/RochesterCarb">Rebuilding a Rochester B</a></li>
+                                    <li><a href="/Home/DipstickTubePlans">Making a new Dipstick Tube</a></li>
+                                    <li><a href="/Home/HEIMountPlans">HEI Module Placement</a></li>
+                                    <li><a href="/Home/CarbAdapterPlans">Making a Carb Adapter</a></li>
+                                    <li><a href="/Figures/v8stovebolt.pdf">V8 Juice for your Stovebolt</a></li>
+                                    <li><a href="/Home/TheVenerable261">The Venerable 261</a></li>
+                                </ul>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Driveline Tech</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Home/HowTo#driveline">Driveline Solutions ALL</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/Figures/ShifterMech.pdf">3 Speed Floor Solution</a></li>
+                                    <li><a href="/Home/LubeCharts">Stock & Richfield Lube Charts</a></li>
+                                    <li><a href="/Home/TireCalc">Tire & Axle Calculators</a></li>
+                                    <li><a href="/Home/Flywheel">Flywheels Explained</a></li>
+                                    <li><a href="/Home/HubCapClips">Smokey's Hubcap Primer</a></li>
+                                    <li class="dropdown dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Borg R10 Overdrive Central</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/Figures/bwoperators.pdf">Borg R10 Operators Manual</a></li>
+                                            <li><a href="/Figures/bwservice.pdf">Borg R10 Service Manual</a></li>
+                                            <li><a href="/Figures/bwrebuild.pdf">Borg R10 Rebuild Document</a></li>
+                                            <li><a href="/Figures/bwwiring.pdf">Borg R10 Wiring Document</a></li>
+                                            <li><a href="/Figures/bwtips.pdf">Borg R10 Tips and Tricks</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chassis/Sheet Metal</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Home/HowTo#sheetmetal">Chassis/Sheet Metal Related ALL</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/Figures/framerivets.pdf">Re-Riveting 1950 Pickup Frame</a></li>
+                                    <li><a href="/Home/PaintColors">Paint Color Information</a></li>
+                                    <li><a href="/Home/Bedwood">Bed Wood Specifications</a></li>
+                                    <li><a href="/Home/StakeRail">Stake & Rail Sideboards</a></li>
+                                    <li><a href="/Home/SideEmblems">AD Era Side Emblems</a></li>
+                                    <li><a href="/Home/CabRelated">AD Cab Information</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Misc. & Electrical</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Home/HowTo#misc">Misc. & Electrical Solutions ALL</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/Home/Native12VUpgrade">Going Native!</a></li>
+                                    <li><a href="/Home/WarningSystem">Critical Warning System!</a></li>
+                                    <li><a href="/Home/SeatBelts">Seatbelt Installation Primer</a></li>
+                                    <li><a href="/Home/HitchPlans">Making a Hitch System</a></li>
+                                    <li><a href="/Home/HeaterRestore">Harrison Heater Restoration</a></li>
+                                    <li><a href="/Home/SeatDrawers">Seat Pedestal System </a></li>
+                                    <li><a href="/Home/SeatFrameRR">Seat Frame R & R</a></li>
+                                    <li><a href="/Home/LicensePlateResto">License Plate Restoration</a></li>
+                                    <li><a href="/Home/GloveboxLock">GloveBox Lock Instruction</a></li>
+                                    <li><a href="/Home/DrumRemoval">Bendix Brake Drum Removal</a></li>
+                                    <li><a href="/Home/SteeringWheel">Steering Wheel Restoration</a></li>
+                                    <li><a href="/Home/SteeringGearbox">Steering Gearbox Restoration</a></li>
+                                    <li><a href="/Home/UnitySpotlight">Unity Spotlight Installation</a></li>
+                                    <li><a href="/Home/ADWiringSystem">AD Wiring System</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop Tech & Solutions</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Home/HowTo#shop">Shop Tech Solutions ALL</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/Home/NutsAndBolts">The Nuts and Bolts</a></li>
+                                    <li><a href="/Home/SandBlasting">Sandblasting Tips</a></li>
+                                    <li><a href="/Home/EngineCartPlans">Making an Engine Cart</a></li>
+                                    <li><a href="/Home/RollerStandPlans">Making a Roller Stand</a></li>
+                                    <li><a href="/Home/RotisseriePlans">Making a Rotisserie</a></li>
+                                    <li><a href="/Home/SuperJigPlans">Making a Super Jig</a></li>
+                                    <li><a href="/Home/StartKartPlans">Making a Start Kart</a></li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button" aria-expanded="false">Resto's<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Home/Deve1950AResto">1950 3100 Stock</a></li>
+                            <li><a href="/Home/Deve1950BResto">1950 3100 Deluxe</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/Home/DevesArchive">Deve's Archive</a></li>
+                            <li><a href="/Home/MorePix"> Site Picture Archive</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button" aria-expanded="false">Resources<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Home/Resources">Resources</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/Home/Contact">About/Contact</a></li>
+                        </ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" role="button" aria-expanded="false"><b>Farm-It-Out</b><span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/Services/Index"><b>Farm-It-Out</b> Product Index</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">216/235/261 Solutions</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Services/HEISystem">Our HEI Upgrade Kit</a></li>
+                                    <li><a href="/Services/PCVUpgrade">Our PCV Upgrade Kit</a></li>
+                                    <li><a href="/Services/OilFilterAdapter">Our Oil System Upgrades</a></li>
+                                    <li><a href="/Services/DipstickTube">Stainless Steel Dipstick Tubes</a></li>
+                                    <li><a href="/Services/CarbAdapter">Our Carb Adapter</a></li>
+                                    <li><a href="/Services/HEIMount">Our HEI/Ballast Mount</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">AD Specific Solutions</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Services/HitchSystem">Custom Hitch Solution</a></li>
+                                    <li><a href="/Services/RancoFirewallCover">Stainless Firewall Covers</a></li>
+                                    <li><a href="/Services/CISIntro">Custom Accessory Bracket</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vintage Era Solutions</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Services/CISIntro">Critical Information System</a></li>
+                                    <li><a href="/Services/BestHeaterControlSolution">Best Heater Control Solution</a></li>
+                                    <li><a href="/Services/Shifter">3 Speed On The Floor!</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resto Shop Solutions</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Services/Rotisserie">Our Frame Rotisserie</a></li>
+                                    <li><a href="/Services/EngineCart">6 Cylinder Engine Cart</a></li>
+                                    <li><a href="/Services/RollerStand">Deluxe Roller Stand</a></li>
+                                    <li><a href="/Services/StartKart">Innovative Start Kart</a></li>
+                                    <li><a href="/Services/SuperJig">Custom SuperJig</a></li>
+                                    <li><a href="/Services/Accessories">Shop Accessories</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <span class="nav navbar-nav navbar-right">
+                    <li><a href="http://forums.devestechnet.com"><b>FORUMS</b></a></li>
+                    <li><a href="/Home/Contact">Donate</a></li>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <input id="searchText" type="text" class="form-control" placeholder="Search the Site">
+                                <button id="searchButton" class="btn btn-default" type="button"><b>GO!</b></button>
+                            </span>
+                        </div>
+                    </form>
+                </span> 
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container body-content">
+        <div class="searchableBodyContent">
+            @RenderBody()
+        </div>
+        <hr />
+    <footer><center>
+    <div class="footer">
+        <a href="/Home/Index"> Home</a> | <a href="/Home/History"> AD History</a> | <a href="/Home/HowTo"> How-To</a> |
+        <a href="/Services/Index"> Farm-It-Out!</a> | <a href="/Home/Restorations"> Restorations</a> | <a href="/Home/Resources"> Resources</a> |
+        <a href="http://forums.devestechnet.com"> TechNet</a> | <a href="/Home/Contact"> Contact</a>
+        <br>&copy; @DateTime.Now.Year - Site by <a href="mailto:deve@speedprint.com?subject=Your Website">Deve</a> - All Rights Reserved
+    </div></center>
+    </footer>
+</div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("/Scripts/bootstrap-hover-dropdown.js")
+    @Scripts.Render("~/bundles/bxslider")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(function () {
+            $(".searchableBodyContent").find('a:has("img")').attr("target", "_blank");
+            $('.newtab').attr('target', '_blank');
+        });
+        $("#searchButton").on('click', function () {
+            location.href = "/Search?term=" + encodeURIComponent($("#searchText").val());
+        });
+        $('#searchText').on('keydown', function (e) {
+            if (e.keyCode === 13) {
+                e.preventDefault();
+                $('#searchButton').click();
+            }
+        })
+    </script>
+</body>
+</html>

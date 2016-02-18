@@ -1,0 +1,43 @@
+Notes for Getting Started with EntityFramework using MVC
+
+To start with, after starting a new project with MVC and no authentication, go to your Views/_Layout.cshtml file to define your web pages.
+
+Next Views/Home/Index.cshtml to replace the Index page content.
+
+In the Package Manager, type Install-Package EntityFramework
+to define to your web pages that you will be using it.
+
+Use @ sign to input C# into HTML code.
+Also only server side code (Razor syntax)
+
+Get more information on Layouts for MVC
+
+===============================
+MVC Learning Resources
+Rachel Appel Blog http://rachelappel.com/
+
+BootStrap Resources
+jameschambers.com then to MVC 5 Starter Project
+
+BootSwitch.com
+
+getbootstrap.com
+glyphs
+components
+alerts
+
+Security
+troyhunt.com
+always require SSL on the logging page
+
+readme.localtest.me
+workaround for sites that do not allow localhost
+github has code snippets for alot of things
+
+System.Web.Helpers has a WebImage assembly that is capable of automatically resizing images on the fly
+
+http://stackoverflow.com/questions/1408566/how-can-i-dynamically-resize-an-image-in-asp-net-mvc
+
+http://stackoverflow.com/questions/19978855/my-css-navigation-bar-wont-move-up-or-down-and-break-when-i-try-to
+(5ymbo123!)
+

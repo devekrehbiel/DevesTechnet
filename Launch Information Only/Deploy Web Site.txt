@@ -1,0 +1,163 @@
+December 15, 2014
+
+Arvixe Web Hosting for windows $8 a month
+Domain: devestechnet.com
+Username: deve
+Server Name: milfoil.arvixe.com
+23.91.121.24 <- the one they gave me
+IP Address: 23.91.123.230 (ping)
+Plan: PersonalClass ASP Pro
+Expiration: 2016-12-15 10:58:26
+www.arvixe.com
+1-888-927-8493d
+Domain Name Server 1: ns1.milfoil.arvixe.com
+Domain Name Server 2: ns2.milfoil.arvixe.com
+Domain Name Server 1 IP: 23.91.123.230
+Domain Name Server 2 IP: 23.91.121.24
+Admin Credentials:
+devestechnet.com_adm
+5ymbo1
+then.. to enable web publishing:
+devestechnet.com_pub
+
+<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+
+	<publishProfile
+		profileName="devestechnet.com - Web Deploy"
+		publishMethod="MSDeploy"
+		publishUrl="MILFOIL.arvixe.com:8172"
+		msdeploySite="devestechnet.com"
+		userName="devestechnetcom_pub"
+		userPWD="5ymbo1"
+		destinationAppUrl="http://devestechnet.com/"
+		
+		
+		hostingProviderForumLink="http://support.acmehosting.com/"
+		controlPanelLink="http://cp.acmehosting.com/"
+	/>
+
+
+</publishData>
+
+<!--
+Control Panel:
+Username: deve
+Password: 5ymbo1
+
+Technical Contact:
+support@acmehosting.com
+-->
+
+
+
+
+
+
+Control Panel:
+Address: http://cp.devestechnet.com
+Alternate Address: http://cp.milfoil.arvixe.com
+Alternate Address (HTTPS): https://cpmilfoil.arvixe.com
+Username: deve
+Password: (the password entered when you purchased your account)
+
+Welcome to the vBulletin Members' Area. Your customer number is MC61228093CE. Li #:LC55876333
+API Key: LA0mzRxB
+*************************************
+
+$config['Database']['dbname'], = Database Name (you'll make this)
+
+9:45 am$config['MasterServer']['servername'], = localhost (just like that -- 'localhost')
+
+$config['MasterServer']['username'], = database username. When you set up the database, it will automatically also set up a user.
+
+$config['MasterServer']['password']. = database user's password -- again, when you set up that database, it makes the database, a user, and a password for the user. That goes right here.
+
+9:46 amProtip: Don't use the "password generate" button in the database maker because it's awful. Stick to letters and numbers, caps and lowercase.
+
+
+ http://kb.site5.com/…atabase-and-user-in-siteadmin/
+
+
+
+
+
+
+
+*************************************
+
+Site5 for Linux (VBulletins) $8.95 a month
+Vbulletins Account Order No. 100022000
+License: LC55876333
+
+Registered devestechnet.com for $12yr thru Site5
+
+
+http://www.vbulletin.com/en/manual/
+https://www.youtube.com/watch?v=_tmCHZvm8j4
+
+
+Carl B.
+Hello Deve. Please wait while we connect you to an operator.
+
+Hi Dave.
+
+What can I assist you with today?
+
+Deve
+To you support that latest version of VBulletins with mobile capability, and then, I have to complicate the issue. I have a windows MVC website I need to deploy and I need THIS V-bulletins to integrate with it.
+
+Carl B.
+Yes we are compatible with all of the requirements for the current version of VBulletin. In what way are you trying to integrate with the other website?
+
+Deve
+I just want to have a button on my windows website that sends you there, then another to get you back in vbulletins. I think that would be enough for people to think its all in one place?
+
+you guys should have one server sitting in the corner that does windows!
+
+Carl B.
+I'm sorry we don't currently have any Windows based hosting options, its been considered being offered before but I don't think management decided to add support for any windows after some debate. Did you have any questions about linking between the two sites?
+
+Deve
+just wanting to be sure its possible
+
+I would think on VBulletins end, it would be possible to do an HREF to another website wouldnt it?
+
+now that I ask that, I want both to share the same domain name. I bet you cant do that can you?
+
+Carl B.
+I checked the documentation on their site for making links, and it looks like they are using very similar syntax to standard html, but its slightly different in that it looks like a short code that you use: http://www.vbulletin…/forum/showthread.php?t=154734 As for the site, what I would recommend is installing vbulletin at a subdomain, like forum.speedprint.com for example. You CAN have subdomain be in completely separate directories, on different servers.
+
+Deve
+and different hosting sites? since the new effort is in windows?
+
+Carl B.
+Yes, that’s actually a fairly common practice to have a dedicated forum application at (for example) forums.domainname.com, or for example an commerce site at store.domainname.com . As for VBulletin that’s exactly what we are using for our own forum as well at http://forums.site5.com/. The reason its import to use subdomains for this is that you can point a subdomain to a different server/IP by editing it’s A record to point to whichever IP you want. You can have the main A record point to your windows site, and the subdomain point to your vbulletin installation here,
+
+Is speedprint.com the domain you are setting up the vbulletin installation for or is it another domain? The reason I ask is I wanted to advise you on where you would create/change the A record for the subodmain. Where this change is made is where the domains name servers point to, that is what dictates what provider you manage the DNS records from.
+
+Deve
+no, i need to get another domain name. so if I get you guys to do Vbulletins, and WinHost (please recommend if you know) to host the win site. Which techie is going to do the A record thing?
+
+I DO want you to do it. We have a history, and I prefer your service for the Linux part.
+
+9:27 am
+Carl B.
+I'm sorry we don't currently have any Windows compatible hosting plans, so unfortunately no applications/sites that require windows/microsoft technology could be hosted here, we can host the vbulletin installation but not the Windows based site. If you do want to host the vbulletin installation here, you can point the domain name here by changing the name servers to: dns.site5.com dns2.site5.com . Since the domains name servers are pointed here, Site5 would be where you manage the DNS records at, so if you wanted to point the main domain to a windows host we can assist you with that. In order to create or modify DNS records for your domain, all you need to do is log in to SiteAdmin, and then scroll down to Domains>Advanced DNS Zone Editor and click to enter. From this location you can view, create, and modify DNS records for the domain including A Records, CNAME Records, and TXT Records.
+
+We also have detailed instructions on how to use the Advanced DNS Zone Editor as well as more in depth descriptions of the types of DNS records here:
+
+http://kb.site5.com/…siteadmin-advanced-dns-editor/
+
+Deve
+thats it for now! thanks so much. I pasted all this into notepad so I dont forget. I will be in touch! thanks!
+
+Whitney C.
+Actually, I'm going to double check this.
+
+11:55 amOkay, awesome, I was right.
+
+So let me type this out.
+
+11:58 am1. Point your domain name to the Window's nameserver by going to Backstage.site5.com > Domains. Then change the name server to whatever Windows tells you.
+2. Then, on the Windows server, go into their DNS editor and make an A record for forums.devestechnet.com and point it to 50.22.11.27
