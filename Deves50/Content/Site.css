@@ -1658,8 +1658,6 @@ div.tablecont1:after {
 }
 /************************************HOW-TO Bedwood End***********************************/
 /*******************************HOW-TO Nuts and Bolts Start*******************************/
-
-
 table.bleddims {
     background-color: #F5F5F5;
     border: 1px solid black;
@@ -1671,14 +1669,12 @@ table.bleddims {
     margin-right: auto;
     width: 330px;
 }
-
 table {
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
     border-color: gray;
 }
-
 tbody {
     width: 320px;
     margin: 10px;
@@ -1797,22 +1793,25 @@ td.tbl33item {
     border: 2px solid black;
     border-radius: 4px;
     margin-bottom: 10px;
-
 }
 .aside1mainx {
+   text-indent: 0;
+   font-family: Tahoma, sans-serif;
+   font-size: 11pt;
    position: relative;
    margin: 15px, auto, 20px, auto;
-   width: 95%;
+   width: 100%;
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 15px;
-   padding-left: 29px;
-   background: #add5ad;
+   padding-left: 15px;
+   padding-right: 15px;
+   background: #7bb17b;
    border: 2px solid #ccc;
    border-radius: 5px;
-   box-shadow: 1px 1px 1px 3px #696;
+   box-shadow: 2px 2px 2px 5px #084929;
    clear: both;
-   height: 100%;
+   /*height: 100%;*/
 }
 div.aside1mainx:after {
    clear: both;
